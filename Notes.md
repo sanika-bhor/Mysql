@@ -40,4 +40,4 @@
 
   ↪ **MySql**
   - MySql is an orcle-backed open source relational darabase management system (RDBMS) based on Structured Query Language (SQL).
-  - MySql runs on virtually all platforms, inicluding Linux, Unix and Windows. Although it can be used in a wide range of application, MySql  id most often associated with web applications and online publishing.
+  - MySql runs on virtually all platforms, inicluding Linux, Unix and Windows. Although it can be used in a wide range of application, MySql  is most often associated with web applications and online publishing.
