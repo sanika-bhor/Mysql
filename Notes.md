@@ -20,3 +20,24 @@
 
   ↪ Data Manipulation Language
    
+
+
+### Types of RDBMS SOftware :-
+  ↪ **Oracle**
+  - Oracle database is most widely used object-relational database management software.
+  - it suport multiple versions of windows, unix and linux OSs.
+  - It is secured, occupies less space, supports large databases, reduces CPU time to process data. 
+  
+  ↪ **MS-Access**
+  - MS-Access combines relational database engine with GUI and softwarer development tools.
+  - MS-Access stores data in its format.
+  - It allows user to store, reteieve and manipulate the database. 
+  
+  ↪ **SQL Server**
+  - SQL Server is a product of RDBMS mainly developed for storing and retriving data to be used by application as per their need.
+  - It extends standard SQL by enhancing features like transaction control, error handling etc.
+  - As a central database, it can also be stored on derver machine.
+
+  ↪ **MySql**
+  - MySql is an orcle-backed open source relational darabase management system (RDBMS) based on Structured Query Language (SQL).
+  - MySql runs on virtually all platforms, inicluding Linux, Unix and Windows. Although it can be used in a wide range of application, MySql  id most often associated with web applications and online publishing.
