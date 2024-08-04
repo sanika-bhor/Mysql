@@ -50,11 +50,11 @@
 
 ## * Components of SQL :-
 
-### Data Defination Language (DDL):
-### Data Manipulation Language (DML):
-### Data Control Language (DCL):
-### Transaction Control Language (TCL):
-### Data Query Language (DQL):
+- #### Data Defination Language (DDL):
+- #### Data Manipulation Language (DML):
+- #### Data Control Language (DCL):
+- #### Transaction Control Language (TCL):
+- #### Data Query Language (DQL):
 
 
 <!------------------------------------------------------------->
