@@ -37,5 +37,12 @@
 - scale is a positive integer that represent the number of digits of decimal places which will be occur to the right of the decimal point. 
 
 
+### ➡ DATE:
+- The DATE data type is accept date type of values. no need to assign size while declaring a DATE data type.
+- DATE value should be specified in the form: YYYY-MM-DD.
+
+### ➡ TIME:
+- The TIME data type accepts time vaiues no parameters are required when declaring a TIME data type.
+- The format is: HH:MM:SS. 
 
 
