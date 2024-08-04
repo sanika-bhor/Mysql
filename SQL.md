@@ -10,4 +10,32 @@
 - SQL İs used in various advanced Relational Database Management Systems (RDBMS). Some common RDBMS has use SQL are : MySQL, Oracle, Microsoft Access, Microsoft SQL Server, Sybase, Ingres, etc.
 
 
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+## * Data type in SQL :-
+### ➡ CHAR(length):
+- The CHAR data type accepts character or string type of data. it also known as fixed length data type.
+- The length of the character string is specified while assigning the data type.
+
+### ➡ VARCHAR(length):
+- The VARCHAR data type accepts character or string type of data. it also known as variable length data type.
+- The length of the character string is specified while assigning the data type which indicate the maximum number of characters it can accept.
+
+### ➡ BOOLEAN:
+- The VARCHAR data type can accepts value either TRUE or FALSE. No need to declare size whie declaring the BOOLEAN data type.
+- TRUE or FALSE are case insensitive.
+
+
+### ➡ INTEGER or INT:
+- The INTEGER data type in SQL is used to store whole numbers, and it typically includes variations like INT, SMALLINT, and BIGINT to accommodate different ranges of values.
+
+
+### ➡ DECIMAL([precision],[scale]):
+- The DECIMAL data type is used to accept floating point values for which you define a precision and a scale in the data type declaration.
+- precision is a positive integer that represent the number of digits that the number will contain.
+- scale is a positive integer that represent the number of digits of decimal places which will be occur to the right of the decimal point. 
+
+
+
 
