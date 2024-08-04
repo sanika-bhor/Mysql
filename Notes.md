@@ -9,7 +9,9 @@
 - The relational data model is the simple model having all the properties reeqired to process data.
 - A relational database is an atttempt to simplify the data structure by making use of tables. Table are used to represent the data and their relationship. Table is a collection of rows and columns. table are also known as relations.
 
-### Advantages of Relational model :-
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+## * Advantages of Relational model :-
   ↪ Ease of use
   
   ↪ Flexibility
@@ -20,9 +22,10 @@
 
   ↪ Data Manipulation Language
    
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
 
-
-### Types of RDBMS SOftware :-
+## * Types of RDBMS SOftware :-
   ↪ **Oracle**
   - Oracle database is most widely used object-relational database management software.
   - it suport multiple versions of windows, unix and linux OSs.
@@ -71,4 +74,5 @@
 
   It is a column of a table. For example: in student table roll_no, name, age, marks are the attributes of the table.
 
-
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
