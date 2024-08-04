@@ -44,6 +44,16 @@
 
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
+## * Characteristics of relational Database :-
+
+1. **Table-Based Structure**:Data is organized into tables (rows and columns), making it easy to visualize and manage.
+2. **Relationships**: Tables can be linked using keys (primary and foreign keys) to represent relationships between different sets of data.
+3. **SQL Queries**: Uses Structured Query Language (SQL) for querying and managing data, allowing for complex data operations with simple commands.
+4. **Data Integrity**: Enforces data accuracy and consistency through constraints like unique keys, primary keys, and foreign keys.
+5. **Scalability**: Can handle large amounts of data and complex queries, making it suitable for small and large applications.
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
 ## * Basic RDBMS Terminalogy :-
 - ### Database:
 
