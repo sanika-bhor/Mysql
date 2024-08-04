@@ -41,3 +41,24 @@
   ↪ **MySql**
   - MySql is an orcle-backed open source relational darabase management system (RDBMS) based on Structured Query Language (SQL).
   - MySql runs on virtually all platforms, inicluding Linux, Unix and Windows. Although it can be used in a wide range of application, MySql  is most often associated with web applications and online publishing.
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+## * Basic RDBMS Terminalogy :-
+- ### Database:
+
+  Database is considerd as collection of tables.
+ 
+- ### Relation (Table):
+
+  It is a collection of rows and column, where records represented by rows and attributes represented by columns.
+
+- ### Tuple (Records):
+
+  Tuple is a single row of the table. it containa whole record of a particular data item.
+
+- ### Attribute (Field):
+
+  It is a column of a table. For example: in student table roll_no, name, age, marks are the attributes of the table.
+
+
