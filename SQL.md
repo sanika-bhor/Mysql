@@ -45,4 +45,17 @@
 - The TIME data type accepts time vaiues no parameters are required when declaring a TIME data type.
 - The format is: HH:MM:SS. 
 
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
 
+## * Components of SQL :-
+
+### Data Defination Language (DDL):
+### Data Manipulation Language (DML):
+### Data Control Language (DCL):
+### Transaction Control Language (TCL):
+### Data Query Language (DQL):
+
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
