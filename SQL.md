@@ -64,7 +64,19 @@
 
   
 - #### Data Manipulation Language (DML):
+     ➡ DML is used to accesing and manipulating data in a database.
+
+    ➡ The DML provides a set of functionality to support the basic data manipulation operation on the data stored in the database.
+  
+    ➡ Statement thats comes under DML:
+  
+  * To Insert record in the table: INSERT
+  * To update the record in table: UPDATE
+  * To drop database instance: DELETE
+    
 - #### Data Control Language (DCL):
+ 
+    
 - #### Transaction Control Language (TCL):
 - #### Data Query Language (DQL):
 
