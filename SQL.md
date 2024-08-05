@@ -50,14 +50,17 @@
 
 ## * Components of SQL :-
 
-- #### Data Defination Language (DDL):
+- ### Data Defination Language (DDL):
     ➡ DDL is used to create data tables, dictionaries and files within database.
+
     ➡ The DDL is also used to specify the structure of each tables, set of associated values with each attributes.
+  
     ➡ Statement thats comes under DDL:
-      - To create the database insatace: CREATE
-      - To alter the structure of database: ALTER
-      - To drop database instance: DROP
-      - TO rename database instance: RENAME
+  
+  * To create the database insatace: CREATE
+  * To alter the structure of database: ALTER
+  * To drop database instance: DROP
+  * To rename database instance: RENAME
 
   
 - #### Data Manipulation Language (DML):
