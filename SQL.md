@@ -91,7 +91,7 @@
   * To commits (save permanently) transactions: COMMIT
   * To rollback (cancel, undo) transaction: ROLLBACK
     
-- #### Data Query Language (DQL):
+- ### Data Query Language (DQL):
     ➡  The commands of SQL that are used to tetrieve data from the database are collectively called as DQL.
   
     ➡ Statement thats comes under DML:
