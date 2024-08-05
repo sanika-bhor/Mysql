@@ -82,9 +82,21 @@
   * To Grant access to user: GRANT
   * To revoke access to user: REVOKE
     
-- #### Transaction Control Language (TCL):
+- ### Transaction Control Language (TCL):
+    ➡ TCL statements allow you to control and manage transactiond to maintain the integrity of data within SQL statements.
+  
+    ➡ Statement thats comes under TCL:
+  
+  * To open a transaction: BEGIN 
+  * To commits (save permanently) transactions: COMMIT
+  * To rollback (cancel, undo) transaction: ROLLBACK
+    
 - #### Data Query Language (DQL):
+    ➡  The commands of SQL that are used to tetrieve data from the database are collectively called as DQL.
+  
+    ➡ Statement thats comes under DML:
 
+  * To retrive the table records: SELECT 
 
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
