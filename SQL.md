@@ -63,7 +63,7 @@
   * To rename database instance: RENAME
 
   
-- #### Data Manipulation Language (DML):
+- ### Data Manipulation Language (DML):
      ➡ DML is used to accesing and manipulating data in a database.
 
     ➡ The DML provides a set of functionality to support the basic data manipulation operation on the data stored in the database.
@@ -74,8 +74,13 @@
   * To update the record in table: UPDATE
   * To drop database instance: DELETE
     
-- #### Data Control Language (DCL):
- 
+- ### Data Control Language (DCL):
+    ➡ DCL is used to control the user access to the databse related elements like table, views, function, procedures and packages.
+  
+    ➡ Statement thats comes under DCL:
+  
+  * To Grant access to user: GRANT
+  * To revoke access to user: REVOKE
     
 - #### Transaction Control Language (TCL):
 - #### Data Query Language (DQL):
