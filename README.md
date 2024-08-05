@@ -1,4 +1,4 @@
-# <p align="center">Mysql Repo</p>
+# <p align="center">Mysql Repository</p>
 
 ## Installation
 
