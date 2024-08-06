@@ -103,7 +103,7 @@
 
     
 - ## DDL commands :-
-  ### Creating Table :
+### Creating Table :
   The CREATE TABLE statement is used to create table in database. Creating a table in MySQL involves using the CREATE TABLE statement, which defines the table structure, including the columns and their data types.
 
  **Snytax**:
@@ -128,10 +128,22 @@ CREATE TABLE users (
 ```
 
  **Explanation**:
+ 
  ➡ Table Name: users is the name of the table.
+ 
  ➡ Columns:
-    * id: An integer column which contain only integer value. 
-    * username: A variable character column with a maximum length of 50 characters.
-    * email: A variable character column with a maximum length of 100 characters.
-    * password: A variable character column with a maximum length of 255 characters.
+     * id: An integer column which contain only integer value. 
+     * username: A variable character column with a maximum length of 50 characters.
+     * email: A variable character column with a maximum length of 100 characters.
+     * password: A variable character column with a maximum length of 255 characters.
 
+
+**Diagram Structure**
+```
++----------------+-------------+---------------------+
+| Id   | username   | email       | password     |
++----------------+-------------+---------------------+
+|      |            |             |              |
+|      |            |             |              |
++----------------+-------------+---------------------+
+```
