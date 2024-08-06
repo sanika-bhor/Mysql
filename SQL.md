@@ -242,3 +242,20 @@ DROP TABLE users;
 **Explanation**:
 deleting users table from the database.
 
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+## Describe Table :  
+The DESC (short for DESCRIBE) statement in MySQL is used to get the structure of an existing table. It provides information about the columns in a table, such as the column names, data types, nullability, key constraints, default values, and extra attributes.
+
+**Snytax**:
+```sql
+DESC tableName;
+```
+**Example**:
+ ```sql
+DESC users;
+```
+**Explanation**:
+displying structure of users table from the database.
+
