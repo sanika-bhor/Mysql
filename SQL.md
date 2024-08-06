@@ -181,3 +181,31 @@ ALTER TABLE users MODIFY COLUMN age TINYINT;
 **Explanation**:
 Changing the datatype of column age of users table.
 
+### 3. Drop a Column
+
+**Snytax**:
+```sql
+ALTER TABLE TableName DROP COLUMN columnName;
+```
+**Example**:
+ ```sql
+ALTER TABLE users DROP COLUMN age;
+```
+**Explanation**:
+Deleting column age from the users table.
+
+
+### 4. Rename a Table
+
+**Snytax**:
+```sql
+ALTER TABLE TableName RENAME TO AnotherTableName;
+```
+**Example**:
+ ```sql
+ALTER TABLE users RENAME TO members;
+```
+**Explanation**:
+Changing the name of the table from users to members.
+
+
