@@ -208,4 +208,37 @@ ALTER TABLE users RENAME TO members;
 **Explanation**:
 Changing the name of the table from users to members.
 
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+## Truncate Table :  
+The TRUNCATE TABLE statement in MySQL is used to delete all rows from a table, but unlike the DELETE statement, it is faster.
+
+**Snytax**:
+```sql
+TRUNCATE TABLE tableName;
+```
+**Example**:
+ ```sql
+TRUNCATE TABLE users;
+```
+**Explanation**:
+ this command will remove all the existing records from the users table.
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+## Drop Table :  
+The DROP TABLE statement in MySQL is used to remove a table from the database entirely. This action deletes the table definition and all its data, and it cannot be undone. Once a table is dropped, it cannot be recovered unless you have a backup.
+
+**Snytax**:
+```sql
+DROP TABLE tableName;
+```
+**Example**:
+ ```sql
+DROP TABLE users;
+```
+**Explanation**:
+deleting users table from the database.
 
