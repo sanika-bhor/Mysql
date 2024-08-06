@@ -100,10 +100,10 @@
 
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
-
-    
-- ## DDL commands :-
-### Creating Table :
+## DDL commands :-
+----------------------------------------------------------------------------------------------------------------------------------------------
+  
+## Creating Table :
   The CREATE TABLE statement is used to create table in database. Creating a table in MySQL involves using the CREATE TABLE statement, which defines the table structure, including the columns and their data types.
 
  **Snytax**:
@@ -132,10 +132,11 @@ CREATE TABLE users (
  ➡ Table Name: users is the name of the table.
  
  ➡ Columns:
-     * id: An integer column which contain only integer value. 
-     * username: A variable character column with a maximum length of 50 characters.
-     * email: A variable character column with a maximum length of 100 characters.
-     * password: A variable character column with a maximum length of 255 characters.
+ 
+   * id: An integer column which contain only integer value. 
+   * username: A variable character column with a maximum length of 50 characters.
+   * email: A variable character column with a maximum length of 100 characters.
+   * password: A variable character column with a maximum length of 255 characters.
 
 
 **Diagram Structure**
@@ -147,3 +148,36 @@ CREATE TABLE users (
 |      |            |             |              |
 +----------------+-------------+---------------------+
 ```
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+## Alter Table :  
+The ALTER TABLE statement in MySQL is used to modify an existing table's structure. You can add, modify, or delete columns, as well as rename the table itself.
+
+### 1. Add a Column
+**Snytax**:
+```sql
+ALTER TABLE TableName ADD columnName DataType[size];
+```
+**Example**:
+ ```sql
+ALTER TABLE users ADD COLUMN age INT;
+```
+**Explanation**:
+ Adding column age in the users table(Existing Table).
+
+
+### 2. Modify a Column
+
+**Snytax**:
+```sql
+ALTER TABLE TableName MODIFY COLUMN columnName DataType[size];
+```
+**Example**:
+ ```sql
+ALTER TABLE users MODIFY COLUMN age TINYINT;
+```
+**Explanation**:
+Changing the datatype of column age of users table.
+
