@@ -355,3 +355,30 @@ This command will Delete record whose username='sanika'from the users table.
 |      |            |             |              |
 +----------------+-------------+---------------------+
 ```
+
+
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+## DQL commands :-
+----------------------------------------------------------------------------------------------------------------------------------------------
+  
+## Select :
+The SELECT statement in MySQL is used to query data from one or more tables. It allows you to specify the columns you want to retrieve, apply conditions to filter the data, and even perform calculations and transformations on the data.
+ 
+ **Snytax**:
+```sql
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+
+```
+
+ **Example**:
+```sql
+SELECT * FROM users WHERE password= 12345;
+```
+
+ **Explanation**:
+This command will retrive all the data form the users table whose passsword is 12345.
+
