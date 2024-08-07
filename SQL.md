@@ -324,3 +324,34 @@ WHERE id = 1;
 |      |            |                          |              |
 +----------------+-------------+---------------------+----------------+
 ```
+
+
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+## Delete :  
+The DELETE statement in MySQL is used to remove rows from a table based on a specified condition. It allows you to delete specific rows or all rows in a table. 
+
+**Snytax**:
+```sql
+DELETE FROM table_name WHERE condition;
+```
+**Example**:
+ ```sql
+DELETE FROM users
+WHERE username = 'sanika';
+
+```
+**Explanation**:
+This command will Delete record whose username='sanika'from the users table.
+
+**Diagram Structure**
+```
++----------------+-------------+---------------------+
+| Id   | username   | email       | password     |
++----------------+-------------+---------------------+
+|      |            |             |              |
+|      |            |             |              |
++----------------+-------------+---------------------+
+```
