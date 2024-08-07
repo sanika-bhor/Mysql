@@ -382,3 +382,24 @@ SELECT * FROM users WHERE password= 12345;
  **Explanation**:
 This command will retrive all the data form the users table whose passsword is 12345.
 
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+## WHERE clause :-
+The WHERE clause in MySQL is used to filter records based on specific conditions. It is used in SELECT, UPDATE, DELETE, and INSERT statements to specify which rows should be affected by the query.
+ 
+ **Snytax**:
+```sql
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+```
+
+ **Example**:
+```sql
+SELECT * FROM users WHERE password= 12345;
+```
+
+ **Explanation**:
+This command will retrive all the data form the users table using WHERE clause to get specific record.
+
