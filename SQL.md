@@ -403,3 +403,6 @@ SELECT * FROM users WHERE password= 12345;
  **Explanation**:
 This command will retrive all the data form the users table using WHERE clause to get specific record.
 
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
