@@ -259,3 +259,34 @@ DESC users;
 **Explanation**:
 displying structure of users table from the database.
 
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+## DML commands :-
+----------------------------------------------------------------------------------------------------------------------------------------------
+  
+## Insert :
+ The INSERT statement in MySQL is used to add new rows to a table. You can insert data into all columns or specific columns, and you can insert multiple rows at once.
+ 
+ **Snytax**:
+```sql
+INSERT INTO table_name VALUES (value1, value2, value3, ...);
+```
+
+ **Example**:
+```sql
+INSERT INTO users VALUES (1, 'sanika', 'bhorsanika0239@gmail.com', 'sanika');
+```
+
+ **Explanation**:
+These records inserted into users table. 
+**Diagram Structure**
+```
++----------------+-------------+---------------------+----------------+
+| Id   | username   | email                    | password     |
++----------------+-------------+---------------------+----------------+
+|  1   |sanika      | bhorsanika0239@gmail.com | sanika       |
+|      |            |                          |              |
++----------------+-------------+---------------------+----------------+
+```
+
