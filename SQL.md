@@ -280,6 +280,7 @@ INSERT INTO users VALUES (1, 'sanika', 'bhorsanika0239@gmail.com', 'sanika');
 
  **Explanation**:
 These records inserted into users table. 
+
 **Diagram Structure**
 ```
 +----------------+-------------+---------------------+----------------+
@@ -290,3 +291,36 @@ These records inserted into users table.
 +----------------+-------------+---------------------+----------------+
 ```
 
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+## Update :  
+The UPDATE statement in MySQL is used to modify existing records in a table. You can update one or more columns in one or more rows based on specified conditions.
+
+**Snytax**:
+```sql
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+
+```
+**Example**:
+ ```sql
+UPDATE users
+SET password = '12345'
+WHERE id = 1;
+
+```
+**Explanation**:
+ This command will Update password of the record whose id=1 of the users table.
+
+ **Diagram Structure**
+```
++----------------+-------------+---------------------+----------------+
+| Id   | username   | email                    | password     |
++----------------+-------------+---------------------+----------------+
+|  1   |sanika      | bhorsanika0239@gmail.com | 12345        |
+|      |            |                          |              |
++----------------+-------------+---------------------+----------------+
+```
