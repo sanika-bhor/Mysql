@@ -127,3 +127,35 @@ This returns the remainder when the value of the price column is divided by 3.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+## * Comparision Operator :-
+Comparison operators in SQL are used to compare two expressions or values. These operators are commonly used in the WHERE clause of SQL queries to filter data based on specific conditions. The result of a comparison is a Boolean value (TRUE, FALSE, or NULL).
+
+### Equal to (=):
+ Checks if two values are equal.
+ 
+**Example**:
+```sql
+SELECT * FROM users WHERE age = 25;
+```
+
+ **Explanation**:
+This retrieves all users with an age of 25.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+### Not equal to (<> or !=):
+SELECT * FROM users WHERE age <> 25;
+
+**Example**:
+```sql
+SELECT price - 5 AS discounted_price FROM products;
+```
+
+ **Explanation**:
+This retrieves all users whose age is not 25.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
