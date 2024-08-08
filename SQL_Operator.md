@@ -24,5 +24,39 @@ SELECT price + 10 AS increased_price FROM products;
 ```
 
  **Explanation**:
- This adds 10 to the value of the price column for each row and retrive data as increased_price colume.
+This adds 10 to the value of the price column for each row and retrieve data as increased_price column.
+
+**Diagram Structure**
+```
++---------------------+
+| increased_price     | 
++---------------------+
+|        25           |           
+|        30           |         
++---------------------+
+```
+
 ----------------------------------------------------------------------------------------------------------------------------------------------
+
+### Subtraction (-):
+Subtracts the second number from the first.
+**Example**:
+```sql
+SELECT price - 5 AS discounted_price FROM products;
+```
+
+ **Explanation**:
+This substract 5 from the value of the price column for each row and retrieve data as discounted_price column.
+
+**Diagram Structure**
+```
++---------------------+
+| discounted_price    | 
++---------------------+
+|        10           |           
+|        15           |         
++---------------------+
+```
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
