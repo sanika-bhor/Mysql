@@ -147,15 +147,41 @@ This retrieves all users with an age of 25.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 ### Not equal to (<> or !=):
-SELECT * FROM users WHERE age <> 25;
+Checks if two values are not equal.
 
 **Example**:
 ```sql
-SELECT price - 5 AS discounted_price FROM products;
+SELECT * FROM users WHERE age <> 25;
 ```
 
  **Explanation**:
 This retrieves all users whose age is not 25.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+### Greater than (>): 
+Checks if the value on the left is greater than the value on the right.
+
+**Example**:
+```sql
+SELECT * FROM products WHERE price > 100;
+```
+
+ **Explanation**:
+This retrieves all products with a price greater than 100.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+### Less than (<): 
+Checks if the value on the left is less than the value on the right.
+
+**Example**:
+```sql
+SELECT * FROM products WHERE price < 100;
+```
+
+ **Explanation**:
+his retrieves all products with a price less than 100.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
