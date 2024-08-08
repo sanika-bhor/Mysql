@@ -181,7 +181,35 @@ SELECT * FROM products WHERE price < 100;
 ```
 
  **Explanation**:
-his retrieves all products with a price less than 100.
+This retrieves all products with a price less than 100.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+### Greater than or equal to (>=): 
+ Checks if the value on the left is greater than or equal to the value on the right.
+
+**Example**:
+```sql
+SELECT * FROM users WHERE age >= 18;
+```
+
+ **Explanation**:
+This retrieves all users who are 18 years old or older.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+### Less than or equal to (<=):
+ Checks if the value on the left is less than or equal to the value on the right.
+
+**Example**:
+```sql
+SELECT * FROM users WHERE age <= 18;
+```
+
+ **Explanation**:
+This retrieves all users who are 18 years old or younger.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
 
