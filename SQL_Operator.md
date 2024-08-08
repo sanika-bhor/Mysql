@@ -60,3 +60,70 @@ This substract 5 from the value of the price column for each row and retrieve da
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
+
+### Multiplication (*):
+ Multiplies two numbers.
+**Example**:
+```sql
+SELECT price * 1.2 AS adjusted_price FROM products;
+```
+
+ **Explanation**:
+This multiplies the value of the price column by 1.2 for each row and retrieve data as adjusted_price column.
+
+**Diagram Structure**
+```
++---------------------+
+|    adjusted_price   | 
++---------------------+
+|        18           |           
+|        24           |         
++---------------------+
+```
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+### Division (/):
+Divides the first number by the second.
+**Example**:
+```sql
+SELECT price / 2 AS half_price FROM products;
+```
+
+ **Explanation**:
+This divides the value of the price column by 2 for each row and retrieve data as half_price column.
+
+**Diagram Structure**
+```
++---------------------+
+|    adjusted_price   | 
++---------------------+
+|        7.5          |           
+|        10           |         
++---------------------+
+```
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+### Modulus (%):
+ Returns the remainder of the division between two numbers.
+**Example**:
+```sql
+SELECT price % 3 AS remainder FROM products;
+```
+
+ **Explanation**:
+This returns the remainder when the value of the price column is divided by 3.
+
+**Diagram Structure**
+```
++---------------------+
+|    remainder        | 
++---------------------+
+|        0            |           
+|        2            |         
++---------------------+
+```
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
