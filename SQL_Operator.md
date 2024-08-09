@@ -210,6 +210,8 @@ SELECT * FROM users WHERE age <= 18;
  **Explanation**:
 This retrieves all users who are 18 years old or younger.
 
+
+
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 
