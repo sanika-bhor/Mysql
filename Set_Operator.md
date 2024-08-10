@@ -32,3 +32,26 @@ SELECT name FROM managers;
 
  **Explanation**:
 This retrieves a list of unique names from both the employees and managers tables.
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+## * UNION ALL :-
+  Similar to UNION, but it does not remove duplicate rows. This can be faster than UNION because it skips the step of eliminating duplicates.
+ 
+ **Syntax**:
+```sql
+SELECT column1, column2 FROM table1
+UNION ALL
+SELECT column1, column2 FROM table2;
+```
+
+**Example**:
+```sql
+SELECT name FROM employees
+UNION ALL
+SELECT name FROM managers;
+```
+
+ **Explanation**:
+This retrieves all names from both tables, including duplicates.
