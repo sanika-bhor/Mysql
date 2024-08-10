@@ -55,3 +55,29 @@ SELECT name FROM managers;
 
  **Explanation**:
 This retrieves all names from both tables, including duplicates.
+
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+## * INTERSECT :-
+Returns only the rows that are common to both SELECT statements. The columns must have the same data type and be in the same order. Not all database systems support this operator.
+ 
+ **Syntax**:
+```sql
+SELECT column1, column2 FROM table1
+INTERSECT
+SELECT column1, column2 FROM table2;
+```
+
+**Example**:
+```sql
+SELECT name FROM employees
+INTERSECT
+SELECT name FROM managers;
+```
+
+ **Explanation**:
+This retrieves only the names that appear in both the employees and managers tables.
+
+
