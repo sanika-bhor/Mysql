@@ -321,3 +321,18 @@ WHERE age >= 18 AND country = 'USA';
 This retrieves all users who are at least 18 years old and live in the USA.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+### OR:
+Checks if two values are not equal. Combines two conditions and returns TRUE if at least one of the conditions is true.
+
+**Example**:
+```sql
+SELECT * FROM users 
+WHERE age < 18 OR country = 'Canada';
+```
+
+ **Explanation**:
+This retrieves all users who are either younger than 18 or live in Canada.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
