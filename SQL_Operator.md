@@ -336,3 +336,18 @@ WHERE age < 18 OR country = 'Canada';
 This retrieves all users who are either younger than 18 or live in Canada.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+### NOT: 
+Negates a condition, returning TRUE if the condition is false and FALSE if the condition is true.
+
+**Example**:
+```sql
+SELECT * FROM users 
+WHERE NOT country = 'USA';
+```
+
+ **Explanation**:
+This retrieves all users who do not live in the USA.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
