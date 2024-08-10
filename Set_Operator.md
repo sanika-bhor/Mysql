@@ -80,4 +80,27 @@ SELECT name FROM managers;
  **Explanation**:
 This retrieves only the names that appear in both the employees and managers tables.
 
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+## * EXCEPT (or MINUS in some databases) :-
+Returns the rows from the first SELECT statement that are not found in the second SELECT statement. The columns must have the same data type and be in the same order.
+ 
+ **Syntax**:
+```sql
+SELECT column1, column2 FROM table1
+EXCEPT
+SELECT column1, column2 FROM table2;
+```
+
+**Example**:
+```sql
+SELECT name FROM employees
+EXCEPT
+SELECT name FROM managers;
+```
+
+ **Explanation**:
+This retrieves the names that are in the employees table but not in the managers table.
+
 
