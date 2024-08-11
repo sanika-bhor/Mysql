@@ -471,7 +471,7 @@ WHERE customer_name LIKE '%v%';
 | David         |
 | Eve           |
 
-#### 4. Using `LIKE` with an Underscore (`_`)
+#### 4. Using LIKE with an Underscore (_)
 
 To find all customer names that are four characters long and start with `D`:
 
