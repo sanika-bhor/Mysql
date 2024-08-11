@@ -414,3 +414,35 @@ WHERE column_name LIKE pattern;
 
 2. **Underscore (`_`)**: Represents a single character. It can be used to match exactly one character.
    - **Example**: `'h_t'` matches `hat`, `hit`, `hot`, etc., but not `heat` or `hoot`.
+
+
+
+### Examples of Using `LIKE`
+
+#### 1. Finding Strings that Start with a Specific Character
+
+Suppose you have a `customers` table with a `customer_name` column.
+
+- **customers** table:
+  | customer_id | customer_name |
+  |-------------|---------------|
+  | 1           | Alice         |
+  | 2           | Bob           |
+  | 3           | Charlie       |
+  | 4           | David         |
+  | 5           | Eve           |
+
+To find all customer names that start with the letter `A`:
+
+```sql
+SELECT customer_name
+FROM customers
+WHERE customer_name LIKE 'A%';
+```
+
+**Result**:
+
+| customer_name |
+|---------------|
+| Alice         |
+
