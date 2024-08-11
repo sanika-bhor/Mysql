@@ -397,31 +397,21 @@ FROM table_name
 WHERE column_name LIKE pattern;
 ```
 
-The `LIKE` operator in SQL is used for pattern matching in queries. It allows you to search for a specified pattern in a column. The `LIKE` operator is commonly used with wildcard characters to find rows that match a particular pattern.
-
-### Syntax
-
-```sql
-SELECT column_name(s)
-FROM table_name
-WHERE column_name LIKE pattern;
-```
-
 ### Wildcard Characters
 
-1. **Percent (`%`)**: Represents zero, one, or multiple characters. It can be used to match a string of any length.
+1. **Percent (%)**: Represents zero, one, or multiple characters. It can be used to match a string of any length.
    - **Example**: `'a%'` matches any string starting with `a`, such as `apple`, `apricot`, etc.
 
-2. **Underscore (`_`)**: Represents a single character. It can be used to match exactly one character.
+2. **Underscore (_)**: Represents a single character. It can be used to match exactly one character.
    - **Example**: `'h_t'` matches `hat`, `hit`, `hot`, etc., but not `heat` or `hoot`.
 
 
 
-### Examples of Using `LIKE`
+### Examples
 
 #### 1. Finding Strings that Start with a Specific Character
 
-Suppose you have a `customers` table with a `customer_name` column.
+Suppose you have a customers table with a customer_name column.
 
 - **customers** table:
   | customer_id | customer_name |
@@ -445,4 +435,22 @@ WHERE customer_name LIKE 'A%';
 | customer_name |
 |---------------|
 | Alice         |
+
+#### 2. Finding Strings that End with a Specific Character
+
+To find all customer names that end with the letter `e`:
+
+```sql
+SELECT customer_name
+FROM customers
+WHERE customer_name LIKE '%e';
+```
+
+**Result**:
+
+| customer_name |
+|---------------|
+| Alice         |
+| Charlie       |
+| Eve           |
 
