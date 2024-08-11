@@ -331,3 +331,32 @@ WHERE order_date BETWEEN '2024-02-01' AND '2024-04-30';
 | 3        | 2024-03-20 |
 | 4        | 2024-04-25 |
 
+#### 3. Using BETWEEN with Text (Strings)
+
+Suppose you have a `customers` table with a `customer_name` column:
+
+- **customers** table:
+  | customer_id | customer_name |
+  |-------------|---------------|
+  | 1           | Alice         |
+  | 2           | Bob           |
+  | 3           | Charlie       |
+  | 4           | David         |
+  | 5           | Eve           |
+
+To find all customer names that fall alphabetically between 'Bob' and 'David':
+
+```sql
+SELECT customer_name
+FROM customers
+WHERE customer_name BETWEEN 'Bob' AND 'David';
+```
+
+**Result**:
+
+| customer_name |
+|---------------|
+| Bob           |
+| Charlie       |
+| David         |
+
