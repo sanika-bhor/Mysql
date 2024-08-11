@@ -260,107 +260,43 @@ This retrieves all users who do not live in the USA.
 
 <!------------------------------------------------------------->
 --------------------------------------------------------------------------------------------------------------------------
-## SET Operators :-
+## Range Searching Operator- Between :-
 
-Set operators in SQL are used to combine the results of two or more SELECT statements into a single result set. The most common set operators are UNION, UNION ALL, INTERSECT, and EXCEPT (or MINUS in some databases). These operators allow you to perform operations on multiple result sets, such as combining them, finding common rows, or identifying differences.
-- Union
-- Union All
-- Intersect
-- Minus
+The BETWEEN operator in SQL is used for range searching, allowing you to select values within a specified range. This operator is commonly used with numeric, date, or even text data types to filter results based on whether a column's value falls within a certain range. The BETWEEN operator is inclusive, meaning it includes both the start and end values in the range.
 
-<!------------------------------------------------------------->
-----------------------------------------------------------------------------------------------------------------------------------------------
-
-### UNION :-
- Combines the results of two or more SELECT statements into a single result set, removing duplicate rows. The columns in the SELECT statements must have the same data type and be in the same order.
- 
  **Syntax**:
 ```sql
-SELECT column1, column2 FROM table1
-UNION
-SELECT column1, column2 FROM table2;
+SELECT column_name(s)
+FROM table_name
+WHERE column_name BETWEEN value1 AND value2;
 
 ```
 
 **Example**:
+### 1. Using BETWEEN with Numbers
+Suppose you have a `products` table with columns `product_id`, `product_name`, and `price`.
+
+- **products** table:
+  | product_id | product_name | price |
+  |------------|--------------|-------|
+  | 1          | Widget A     | 100   |
+  | 2          | Widget B     | 150   |
+  | 3          | Widget C     | 200   |
+  | 4          | Widget D     | 250   |
+  | 5          | Widget E     | 300   |
+
+To find all products priced between 150 and 250:
+
 ```sql
-SELECT name FROM employees
-UNION
-SELECT name FROM managers;
+SELECT product_name, price
+FROM products
+WHERE price BETWEEN 150 AND 250;
 ```
 
- **Explanation**:
-This retrieves a list of unique names from both the employees and managers tables.
+**Result**:
 
-<!------------------------------------------------------------->
-----------------------------------------------------------------------------------------------------------------------------------------------
-
-### UNION ALL :-
-  Similar to UNION, but it does not remove duplicate rows. This can be faster than UNION because it skips the step of eliminating duplicates.
- 
- **Syntax**:
-```sql
-SELECT column1, column2 FROM table1
-UNION ALL
-SELECT column1, column2 FROM table2;
-```
-
-**Example**:
-```sql
-SELECT name FROM employees
-UNION ALL
-SELECT name FROM managers;
-```
-
- **Explanation**:
-This retrieves all names from both tables, including duplicates.
-
-
-<!------------------------------------------------------------->
-----------------------------------------------------------------------------------------------------------------------------------------------
-
-### INTERSECT :-
-Returns only the rows that are common to both SELECT statements. The columns must have the same data type and be in the same order. Not all database systems support this operator.
- 
- **Syntax**:
-```sql
-SELECT column1, column2 FROM table1
-INTERSECT
-SELECT column1, column2 FROM table2;
-```
-
-**Example**:
-```sql
-SELECT name FROM employees
-INTERSECT
-SELECT name FROM managers;
-```
-
- **Explanation**:
-This retrieves only the names that appear in both the employees and managers tables.
-
-<!------------------------------------------------------------->
-----------------------------------------------------------------------------------------------------------------------------------------------
-
-### EXCEPT (or MINUS in some databases) :-
-Returns the rows from the first SELECT statement that are not found in the second SELECT statement. The columns must have the same data type and be in the same order.
- 
- **Syntax**:
-```sql
-SELECT column1, column2 FROM table1
-EXCEPT
-SELECT column1, column2 FROM table2;
-```
-
-**Example**:
-```sql
-SELECT name FROM employees
-EXCEPT
-SELECT name FROM managers;
-```
-
- **Explanation**:
-This retrieves the names that are in the employees table but not in the managers table.
-
-
-
+| product_name | price |
+|--------------|-------|
+| Widget B     | 150   |
+| Widget C     | 200   |
+| Widget D     | 250   |
