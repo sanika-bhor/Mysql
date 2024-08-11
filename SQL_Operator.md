@@ -487,3 +487,23 @@ WHERE customer_name LIKE 'D___';
 |---------------|
 | David         |
 
+#### 5. Using NOT LIKE
+
+You can use `NOT LIKE` to find rows that do not match a pattern.
+
+- **Example**: To find all customer names that do not start with `A`:
+
+  ```sql
+  SELECT customer_name
+  FROM customers
+  WHERE customer_name NOT LIKE 'A%';
+  ```
+
+  **Result**:
+
+  | customer_name |
+  |---------------|
+  | Bob           |
+  | Charlie       |
+  | David         |
+  | Eve           |
