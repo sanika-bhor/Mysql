@@ -454,3 +454,36 @@ WHERE customer_name LIKE '%e';
 | Charlie       |
 | Eve           |
 
+#### 3. Finding Strings that Contain a Specific Substring
+
+To find all customer names that contain the letter `v`:
+
+```sql
+SELECT customer_name
+FROM customers
+WHERE customer_name LIKE '%v%';
+```
+
+**Result**:
+
+| customer_name |
+|---------------|
+| David         |
+| Eve           |
+
+#### 4. Using `LIKE` with an Underscore (`_`)
+
+To find all customer names that are four characters long and start with `D`:
+
+```sql
+SELECT customer_name
+FROM customers
+WHERE customer_name LIKE 'D___';
+```
+
+**Result**:
+
+| customer_name |
+|---------------|
+| David         |
+
