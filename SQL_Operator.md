@@ -273,7 +273,7 @@ WHERE column_name BETWEEN value1 AND value2;
 ```
 
 **Example**:
-### 1. Using BETWEEN with Numbers
+#### 1. Using BETWEEN with Numbers
 Suppose you have a `products` table with columns `product_id`, `product_name`, and `price`.
 
 - **products** table:
@@ -300,3 +300,34 @@ WHERE price BETWEEN 150 AND 250;
 | Widget B     | 150   |
 | Widget C     | 200   |
 | Widget D     | 250   |
+
+
+#### 2. Using BETWEEN with Dates
+
+Assume you have an `orders` table with columns `order_id`, `customer_id`, and `order_date`.
+
+- **orders** table:
+  | order_id | customer_id | order_date |
+  |----------|-------------|------------|
+  | 1        | 101         | 2024-01-10 |
+  | 2        | 102         | 2024-02-15 |
+  | 3        | 103         | 2024-03-20 |
+  | 4        | 104         | 2024-04-25 |
+  | 5        | 105         | 2024-05-30 |
+
+To find all orders placed between February 1, 2024, and April 30, 2024:
+
+```sql
+SELECT order_id, order_date
+FROM orders
+WHERE order_date BETWEEN '2024-02-01' AND '2024-04-30';
+```
+
+**Result**:
+
+| order_id | order_date |
+|----------|------------|
+| 2        | 2024-02-15 |
+| 3        | 2024-03-20 |
+| 4        | 2024-04-25 |
+
