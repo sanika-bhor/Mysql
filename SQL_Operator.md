@@ -360,3 +360,24 @@ WHERE customer_name BETWEEN 'Bob' AND 'David';
 | Charlie       |
 | David         |
 
+### Using `NOT BETWEEN`
+
+You can also use `NOT BETWEEN` to exclude a range of values.
+
+#### Example
+
+To find products priced outside the range of 150 and 250:
+
+```sql
+SELECT product_name, price
+FROM products
+WHERE price NOT BETWEEN 150 AND 250;
+```
+
+**Result**:
+
+| product_name | price |
+|--------------|-------|
+| Widget A     | 100   |
+| Widget E     | 300   |
+
