@@ -381,3 +381,36 @@ WHERE price NOT BETWEEN 150 AND 250;
 | Widget A     | 100   |
 | Widget E     | 300   |
 
+
+
+
+<!------------------------------------------------------------->
+--------------------------------------------------------------------------------------------------------------------------
+## Pattern Matching Opertaor -Like :-
+
+The LIKE operator in SQL is used for pattern matching in queries. It allows you to search for a specified pattern in a column. The LIKE operator is commonly used with wildcard characters to find rows that match a particular pattern.
+
+ **Syntax**:
+```sql
+SELECT column_name(s)
+FROM table_name
+WHERE column_name LIKE pattern;
+```
+
+The `LIKE` operator in SQL is used for pattern matching in queries. It allows you to search for a specified pattern in a column. The `LIKE` operator is commonly used with wildcard characters to find rows that match a particular pattern.
+
+### Syntax
+
+```sql
+SELECT column_name(s)
+FROM table_name
+WHERE column_name LIKE pattern;
+```
+
+### Wildcard Characters
+
+1. **Percent (`%`)**: Represents zero, one, or multiple characters. It can be used to match a string of any length.
+   - **Example**: `'a%'` matches any string starting with `a`, such as `apple`, `apricot`, etc.
+
+2. **Underscore (`_`)**: Represents a single character. It can be used to match exactly one character.
+   - **Example**: `'h_t'` matches `hat`, `hit`, `hot`, etc., but not `heat` or `hoot`.
