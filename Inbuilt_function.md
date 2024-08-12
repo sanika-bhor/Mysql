@@ -211,4 +211,46 @@ SELECT LPAD('Hello', 10, '*') AS padded_string;
 | *****Hello      |
 
 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+### 10. RPAD():
+Pads the right side of a string with a specified character to a certain length.
+
+**Syntax**:
+```sql
+SELECT RPAD(column_name, length, 'pad_string') FROM table_name;
+```
+
+**Example**:
+```sql
+SELECT RPAD('Hello', 10, '*') AS padded_string;
+```
+
+**Result**:
+|  padded_string  |
+|-----------------|
+| Hello*****      |
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+### 10. INITCAP():
+To converts first letter of each word iin capital letter.
+
+**Syntax**:
+```sql
+SELECT INITCAP(column_name) FROM table_name;
+```
+
+**Example**:
+```sql
+SELECT INITCAP('hello sql') AS initcap_string;
+```
+
+**Result**:
+| initcap_string  |
+|-----------------|
+| Hello Sql       |
+
+
 
