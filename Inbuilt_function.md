@@ -67,3 +67,44 @@ SELECT LENGTH('Hello World') AS string_length;
 | 11            |
 
 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+### 4. SUBSTR():
+Extracts a substring from a string.
+
+**Syntax**:
+```sql
+SELECT SUBSTRING(column_name, start_position, length) FROM table_name;
+```
+
+**Example**:
+```sql
+SELECT SUBSTRING('Hello World', 1, 5) AS substring;
+```
+
+**Result**:
+|   substring   |
+|---------------|
+|    Hello      |
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+### 4. CONCAT():
+Concatenates two or more strings together.
+
+**Syntax**:
+```sql
+SELECT CONCAT(string1, string2, ...) FROM table_name;
+```
+
+**Example**:
+```sql
+SELECT CONCAT('Hello', ' ', 'World') AS concatenated_string;
+```
+
+**Result**:
+| concatenated_string |
+|---------------------|
+|     Hello World     |
+
+
