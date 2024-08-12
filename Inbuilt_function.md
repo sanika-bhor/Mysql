@@ -252,5 +252,22 @@ SELECT INITCAP('hello sql') AS initcap_string;
 |-----------------|
 | Hello Sql       |
 
+----------------------------------------------------------------------------------------------------------------------------------------------
+### Example of Multiple String Functions in a Query
+Suppose you have a users table with a username column, and you want to standardize the usernames to be uppercase and remove any leading or trailing spaces:
 
+**Example**:
+```sql
+SELECT UPPER(TRIM(username)) AS standardized_username
+FROM users;
+```
+
+**Result**:
+| standardized_username  |
+|------------------------|
+| SANIKA BHOR            |
+| SUMIT BHOR             |
+| DISHA SATPUTE          |
+
+----------------------------------------------------------------------------------------------------------------------------------------------
 
