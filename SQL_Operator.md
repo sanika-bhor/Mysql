@@ -18,6 +18,7 @@ Arithmetic operators in SQL are used to perform mathematical operations on numer
 
 ### Addition(+):
 Adds two numbers together.
+
 **Example**:
 ```sql
 SELECT price + 10 AS increased_price FROM products;
@@ -40,6 +41,7 @@ This adds 10 to the value of the price column for each row and retrieve data as 
 
 ### Subtraction (-):
 Subtracts the second number from the first.
+
 **Example**:
 ```sql
 SELECT price - 5 AS discounted_price FROM products;
@@ -63,6 +65,7 @@ This substract 5 from the value of the price column for each row and retrieve da
 
 ### Multiplication (*):
  Multiplies two numbers.
+ 
 **Example**:
 ```sql
 SELECT price * 1.2 AS adjusted_price FROM products;
@@ -85,6 +88,7 @@ This multiplies the value of the price column by 1.2 for each row and retrieve d
 
 ### Division (/):
 Divides the first number by the second.
+
 **Example**:
 ```sql
 SELECT price / 2 AS half_price FROM products;
@@ -107,6 +111,7 @@ This divides the value of the price column by 2 for each row and retrieve data a
 
 ### Modulus (%):
  Returns the remainder of the division between two numbers.
+ 
 **Example**:
 ```sql
 SELECT price % 3 AS remainder FROM products;
@@ -507,3 +512,6 @@ You can use `NOT LIKE` to find rows that do not match a pattern.
   | Charlie       |
   | David         |
   | Eve           |
+
+<!------------------------------------------------------------->
+--------------------------------------------------------------------------------------------------------------------------
