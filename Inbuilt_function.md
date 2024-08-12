@@ -169,4 +169,25 @@ SELECT RTRIM('  Hello World  ') AS Rtrimmed_string;
 | Hello World     |
 
 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+### 8. REPLACE():
+Replaces occurrences of a specified substring within a string.
+
+**Syntax**:
+```sql
+SELECT REPLACE(column_name, 'old_substring', 'new_substring') FROM table_name;
+```
+
+**Example**:
+```sql
+SELECT REPLACE('Hello World', 'World', 'SQL') AS replaced_string;
+```
+
+**Result**:
+| replaced_string |
+|-----------------|
+| Hello SQL       |
+
+
 
