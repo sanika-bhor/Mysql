@@ -107,4 +107,66 @@ SELECT CONCAT('Hello', ' ', 'World') AS concatenated_string;
 |---------------------|
 |     Hello World     |
 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+### 5. TRIM():
+Removes leading and trailing spaces from a string.
+
+**Syntax**:
+```sql
+SELECT TRIM(column_name) FROM table_name;
+```
+
+**Example**:
+```sql
+SELECT TRIM('  Hello World  ') AS trimmed_string;
+```
+
+**Result**:
+| trimmed_string |
+|----------------|
+| Hello World    |
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+### 6. LTRIM():
+Removes leading spaces from a string.
+
+**Syntax**:
+```sql
+SELECT LTRIM(column_name) FROM table_name;
+```
+
+**Example**:
+```sql
+SELECT LTRIM('  Hello World  ') AS Ltrimmed_string;
+```
+
+**Result**:
+| Ltrimmed_string |
+|----------------|
+| Hello World    |
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+### 7. RTRIM():
+Removes leading spaces from a string.
+
+**Syntax**:
+```sql
+SELECT RTRIM(column_name) FROM table_name;
+```
+
+**Example**:
+```sql
+SELECT RTRIM('  Hello World  ') AS Rtrimmed_string;
+```
+
+**Result**:
+| Rtrimmed_string |
+|-----------------|
+| Hello World     |
+
+
 
