@@ -190,4 +190,25 @@ SELECT REPLACE('Hello World', 'World', 'SQL') AS replaced_string;
 | Hello SQL       |
 
 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+### 9. LPAD():
+Pads the left side of a string with a specified character to a certain length.
+
+**Syntax**:
+```sql
+SELECT LPAD(column_name, length, 'pad_string') FROM table_name;
+```
+
+**Example**:
+```sql
+SELECT LPAD('Hello', 10, '*') AS padded_string;
+```
+
+**Result**:
+|  padded_string  |
+|-----------------|
+| *****Hello      |
+
+
 
