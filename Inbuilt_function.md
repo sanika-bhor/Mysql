@@ -547,4 +547,31 @@ SELECT TIMESTAMPDIFF(HOUR, '2024-08-10 10:00:00', '2024-08-10 14:00:00') AS hour
 |------------------|
 | 4                |
 
+<!------------------------------------------------------------->
+--------------------------------------------------------------------------------------------------------------------------
+## Aggregate Function :-
+
+SQL aggregate functions are used to perform calculations on a set of values and return a single value. They are often used with GROUP BY clauses to group rows that share a common characteristic and calculate a summary result.
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+### 1. SUM():
+Returns the total sum of a numeric column.
+
+**Syntax**:
+```sql
+SELECT SUM(column_name) FROM table_name;
+```
+
+**Example**:
+```sql
+SELECT SUM(salary) AS total_salary FROM employees;
+```
+
+**Result**:
+|   total_salary   |
+|------------------|
+| 500000           |
+
 ----------------------------------------------------------------------------------------------------------------------------------------------
