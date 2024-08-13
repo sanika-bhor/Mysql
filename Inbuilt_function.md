@@ -575,3 +575,45 @@ SELECT SUM(salary) AS total_salary FROM employees;
 | 500000           |
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+### 2. MIN():
+Returns the minimum value in a set of values.
+
+**Syntax**:
+```sql
+SELECT MIN(column_name) FROM table_name;
+```
+
+**Example**:
+```sql
+SELECT MIN(salary) AS minimum_salary FROM employees;
+```
+
+**Result**:
+|   minimum_salary |
+|------------------|
+| 3000             |
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+### 3. MAX():
+Returns the maximum value in a set of values.
+
+**Syntax**:
+```sql
+SELECT MAX(column_name) FROM table_name;
+```
+
+**Example**:
+```sql
+SELECT MAX(salary) AS maximum_salary FROM employees;
+```
+
+**Result**:
+|   maximum_salary |
+|------------------|
+| 100000           |
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
