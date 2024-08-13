@@ -655,3 +655,23 @@ SELECT COUNT(*) AS total_rows FROM users;
 | 100          |
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
+
+### Example of Using Aggregate Functions with GROUP BY
+Suppose you want to calculate the total salary for each department in a company:
+
+```sql
+SELECT department, SUM(salary) AS total_salary
+FROM employees
+GROUP BY department;
+
+```
+
+**Result**:
+| department   | total_salary |
+|--------------|--------------|
+| HR           |   100000     | 
+| IT           |   200000     | 
+| Sale         |   150000     | 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
