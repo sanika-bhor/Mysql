@@ -269,5 +269,12 @@ FROM users;
 | SUMIT BHOR             |
 | DISHA SATPUTE          |
 
+<!------------------------------------------------------------->
+--------------------------------------------------------------------------------------------------------------------------
+## Date and Time Function :-
+
+SQL date and time functions are essential for manipulating and working with date and time values. They allow you to extract parts of a date, calculate intervals, format dates, and perform various other operations on date and time data types.
+
+<!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
