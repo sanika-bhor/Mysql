@@ -507,3 +507,44 @@ SELECT SECOND('2024-08-10 14:30:45') AS second_part;
 | 00          |
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
+
+### 12. DATEDIFF():
+Returns the difference between two dates.
+
+**Syntax**:
+```sql
+SELECT DATEDIFF(date1, date2);
+```
+
+**Example**:
+```sql
+SELECT DATEDIFF('2024-08-15', '2024-08-10') AS date_difference;
+```
+
+**Result**:
+| date_difference |
+|-----------------|
+| 5               |
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+### 13. TIMESTAMPDIFF():
+Returns the difference between two timestamps.
+
+**Syntax**:
+```sql
+SELECT TIMESTAMPDIFF(unit, datetime1, datetime2);
+```
+
+**Example**:
+```sql
+SELECT TIMESTAMPDIFF(HOUR, '2024-08-10 10:00:00', '2024-08-10 14:00:00') AS hours_difference;
+```
+
+**Result**:
+| hours_difference |
+|------------------|
+| 4                |
+
+----------------------------------------------------------------------------------------------------------------------------------------------
