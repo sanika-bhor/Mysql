@@ -613,7 +613,45 @@ SELECT MAX(salary) AS maximum_salary FROM employees;
 **Result**:
 |   maximum_salary |
 |------------------|
-| 100000           |
+| 10000            |
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
+### 4. AVG():
+Returns the average value of a numeric column.
+
+**Syntax**:
+```sql
+SELECT AVG(column_name) FROM table_name;
+```
+
+**Example**:
+```sql
+SELECT AVG(salary) AS average_salary FROM employees;
+```
+
+**Result**:
+|  average_salary  |
+|------------------|
+| 5000             |
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+### 5. COUNT():
+Returns the number of rows that match a specified condition.
+
+**Syntax**:
+```sql
+SELECT COUNT(column_name) FROM table_name;
+```
+
+**Example**:
+```sql
+SELECT COUNT(*) AS total_rows FROM users;
+```
+
+**Result**:
+| total_rows   |
+|--------------|
+| 100          |
+
+----------------------------------------------------------------------------------------------------------------------------------------------
