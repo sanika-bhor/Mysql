@@ -372,7 +372,7 @@ SELECT TIME(expression);
 
 **Example**:
 ```sql
-SELECT TIME('2024-08-10 14:30:00') AS time_part;
+SELECT TIME('2024-08-13 14:30:00') AS time_part;
 ```
 
 **Result**:
@@ -393,7 +393,7 @@ SELECT YEAR(date);
 
 **Example**:
 ```sql
-SELECT YEAR('2024-08-10') AS year_part;
+SELECT YEAR('2024-08-13') AS year_part;
 ```
 
 **Result**:
@@ -414,12 +414,54 @@ SELECT MONTH(date);
 
 **Example**:
 ```sql
-SELECT MONTH('2024-08-10') AS month_part;
+SELECT MONTH('2024-08-13') AS month_part;
 ```
 
 **Result**:
 | month_part   |
 |--------------|
 | 8            |
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+### 8. DAY():
+Extracts the day of the month from a date.
+
+**Syntax**:
+```sql
+SELECT DAY(date);
+```
+
+**Example**:
+```sql
+SELECT DAY('2024-08-10') AS day_part;
+```
+
+**Result**:
+| day_part   |
+|--- --------|
+| 13         |
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+### 9. HOUR():
+Extracts the hour from a time or date-time expression.
+
+**Syntax**:
+```sql
+SELECT HOUR(time);
+```
+
+**Example**:
+```sql
+SELECT HOUR('2024-08-13 14:30:00') AS hour_part;
+```
+
+**Result**:
+| hour_part   |
+|-------------|
+| 14          |
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
