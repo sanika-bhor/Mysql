@@ -53,3 +53,27 @@ FOREIGN KEY (user_id) REFERENCES users(id);
 Maintains a relationship between two tables, ensuring that records in one table correspond to valid records in another.
  
 ----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+### 3. NOT NULL:
+Ensures that a column cannot have a NULL value.
+
+**Syntax**:
+```sql
+CREATE TABLE users (
+    id INT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL
+);
+```
+
+**Example**:
+```sql
+ALTER TABLE users
+MODIFY username VARCHAR(50) NOT NULL;
+```
+
+**Purpose**:
+ Prevents missing or undefined data in the specified column.
+ 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
