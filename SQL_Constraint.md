@@ -100,3 +100,27 @@ ADD CONSTRAINT unique_email UNIQUE (email);
  
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
+
+### 5. CHECK:
+Ensures that all values in a column satisfy a specific condition.
+
+**Syntax**:
+```sql
+CREATE TABLE employees (
+    id INT PRIMARY KEY,
+    age INT CHECK (age >= 18)
+);
+```
+
+**Example**:
+```sql
+ALTER TABLE employees
+ADD CONSTRAINT check_age
+CHECK (age >= 18);
+```
+
+**Purpose**:
+ Validates that data in a column meets a defined criterion.
+ 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
