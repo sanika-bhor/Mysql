@@ -28,4 +28,5 @@ ADD PRIMARY KEY (id);
 **Purpose**:
 
  Ensures that each record in the table can be uniquely identified.
+ 
 ----------------------------------------------------------------------------------------------------------------------------------------------
