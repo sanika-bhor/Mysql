@@ -168,3 +168,21 @@ MODIFY id INT AUTO_INCREMENT;
  
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
+### Creating a Table with Multiple Constraints:
+Automatically generates a unique number for each new record in a table.
+
+**Syntax**:
+```sql
+CREATE TABLE employees (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE,
+    age INT CHECK (age >= 18),
+    department_id INT,
+    hire_date DATE DEFAULT CURRENT_DATE,
+    FOREIGN KEY (department_id) REFERENCES departments(department_id)
+);
+```
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
