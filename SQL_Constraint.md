@@ -77,3 +77,26 @@ MODIFY username VARCHAR(50) NOT NULL;
  
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
+
+### 4. UNIQUE:
+Ensures that all values in a column are different.
+
+**Syntax**:
+```sql
+CREATE TABLE users (
+    id INT PRIMARY KEY,
+    email VARCHAR(100) UNIQUE
+);
+```
+
+**Example**:
+```sql
+ALTER TABLE users
+ADD CONSTRAINT unique_email UNIQUE (email);
+```
+
+**Purpose**:
+ Guarantees that no duplicate values are entered in the column.
+ 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
