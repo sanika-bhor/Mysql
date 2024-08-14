@@ -146,3 +146,25 @@ MODIFY price DECIMAL(10, 2) DEFAULT 0.00;
  
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
+### 6. AUTO_INCREMENT:
+Automatically generates a unique number for each new record in a table.
+
+**Syntax**:
+```sql
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL
+);
+```
+
+**Example**:
+```sql
+ALTER TABLE users
+MODIFY id INT AUTO_INCREMENT;
+```
+
+**Purpose**:
+ Automatically assigns a unique value to the primary key field when a new record is inserted.
+ 
+----------------------------------------------------------------------------------------------------------------------------------------------
+
