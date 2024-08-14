@@ -26,7 +26,30 @@ ADD PRIMARY KEY (id);
 ```
 
 **Purpose**:
+Ensures that each record in the table can be uniquely identified.
+ 
+----------------------------------------------------------------------------------------------------------------------------------------------
 
- Ensures that each record in the table can be uniquely identified.
+### 2. FOREIGN KEY:
+Ensures referential integrity between two tables by linking the FOREIGN KEY in one table to the PRIMARY KEY in another.
+
+**Syntax**:
+```sql
+CREATE TABLE orders (
+    order_id INT PRIMARY KEY,
+    user_id INT,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
+```
+
+**Example**:
+```sql
+ALTER TABLE orders
+ADD CONSTRAINT fk_user_id
+FOREIGN KEY (user_id) REFERENCES users(id);
+```
+
+**Purpose**:
+Maintains a relationship between two tables, ensuring that records in one table correspond to valid records in another.
  
 ----------------------------------------------------------------------------------------------------------------------------------------------
