@@ -86,3 +86,62 @@ An OUTER JOIN in SQL is used to return all the rows from one table and the match
 3. FULL JOIN
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
+
+## 3. LEFT OUTER JOIN :
+A LEFT OUTER JOIN, commonly referred to as a LEFT JOIN, returns all the records from the left table and the matched records from the right table. If there is no match, NULL values are returned for the columns from the right table.
+
+<p align="center">
+ <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCwXWanQ7QY7xLrPICDzNqqZboaVzEXMhDohouvPv23owRLjIeRThk-qZTcPH-Gcs94zc&usqp=CAU" width="350" alt="inner join" >
+</p>
+
+*Syntax*:
+sql
+SELECT column1, column2, ...
+FROM table1
+LEFT JOIN table2
+ON table1.column = table2.column;
+
+
+*Representation*:
+
+Table A   Table B   LEFT JOIN
+  A1        B1        A1   B1
+  A2        B2        A2   B2
+  A3                  A3   NULL
+
+
+*Example*:
+
+Suppose you have two tables:
+1. employees:
+    - id
+    - name
+    - department_id
+
+2. departments:
+    - id
+    - department_name
+
+
+You want to retrieve the names of all employees along with their department names, including those employees who are not assigned to any department.
+
+sql
+SELECT employees.name, departments.department_name
+FROM employees
+LEFT JOIN departments
+ON employees.department_id = departments.id;
+
+
+*Result*:
+| name   | department_name |
+|--------|-----------------|
+| Alice  | HR              |
+| Bob    | IT              |
+| Charlie| Sales           |
+| David  | NULL            |
+
+In this example:
+- "Alice", "Bob", and "Charlie" have matching departments, so their department names are displayed.
+- "David" does not belong to any department (department_id is NULL), so NULL is displayed in the department_name column.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
