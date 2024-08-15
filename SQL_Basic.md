@@ -470,3 +470,35 @@ HAVING SUM(salary) > 150000;
 
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+## Order By clause :-
+
+The ORDER BY clause in SQL is used to sort the result set of a query by one or more columns. You can sort the results in ascending (ASC) or descending (DESC) order. By default, if the sorting order is not specified, the ORDER BY clause sorts the results in ascending order.
+
+ **Snytax**:
+```sql
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition
+ORDER BY column1 [ASC|DESC], column2 [ASC|DESC], ...;
+```
+
+ **Example**:
+Suppose you have a table named employees, and you want to retrieve all employees sorted by their salary in ascending order:
+```sql
+SELECT name, salary
+FROM employees
+ORDER BY salary ASC;
+```
+
+**Result**:
+
+| name  | salary |
+|-------|--------|
+| Alice | 3000   |
+| Bob   | 4000   |
+| John  | 5000   |
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
