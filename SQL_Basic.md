@@ -438,3 +438,35 @@ GROUP BY department;
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
+## Having clause :-
+
+The HAVING clause in SQL is used to filter the results of a GROUP BY clause based on a condition applied to the aggregated data. It is similar to the WHERE clause, but while WHERE filters rows before any grouping is performed, HAVING filters the grouped rows after the aggregation.
+
+ **Snytax**:
+```sql
+SELECT column1, aggregate_function(column2)
+FROM table_name
+WHERE condition
+GROUP BY column1
+HAVING condition;
+```
+
+ **Example**:
+Suppose you have a table named employees and you want to find departments where the total salary exceeds 150,000:
+```sql
+SELECT department, SUM(salary) AS total_salary
+FROM employees
+GROUP BY department
+HAVING SUM(salary) > 150000;
+```
+
+**Result**:
+
+| department | total_salary |
+|------------|--------------|
+| IT         | 250000       |
+| Sales      | 150000       |
+
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
