@@ -38,6 +38,14 @@ FROM table1
 INNER JOIN table2
 ON table1.column = table2.column;
 ```
+**Representation**:
+```
+Table A   Table B   INNER JOIN
+  A1        B1         A1
+  A2        B2         A2
+  A3                   (no match)
+            B3         (no match)
+```
 
 **Example**:
 
