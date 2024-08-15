@@ -94,23 +94,24 @@ A LEFT OUTER JOIN, commonly referred to as a LEFT JOIN, returns all the records 
  <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCwXWanQ7QY7xLrPICDzNqqZboaVzEXMhDohouvPv23owRLjIeRThk-qZTcPH-Gcs94zc&usqp=CAU" width="350" alt="inner join" >
 </p>
 
-*Syntax*:
-sql
+**Syntax**:
+```sql
 SELECT column1, column2, ...
 FROM table1
 LEFT JOIN table2
 ON table1.column = table2.column;
+```
 
+**Representation**:
 
-*Representation*:
-
+```
 Table A   Table B   LEFT JOIN
   A1        B1        A1   B1
   A2        B2        A2   B2
   A3                  A3   NULL
+```
 
-
-*Example*:
+**Example**:
 
 Suppose you have two tables:
 1. employees:
@@ -125,14 +126,15 @@ Suppose you have two tables:
 
 You want to retrieve the names of all employees along with their department names, including those employees who are not assigned to any department.
 
-sql
+```sql
 SELECT employees.name, departments.department_name
 FROM employees
 LEFT JOIN departments
 ON employees.department_id = departments.id;
+```
 
+**Result**:
 
-*Result*:
 | name   | department_name |
 |--------|-----------------|
 | Alice  | HR              |
@@ -154,24 +156,25 @@ A RIGHT OUTER JOIN, commonly referred to as a RIGHT JOIN, returns all the record
  <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS6_OSio58V6T0ZEDxHzaZU946DBuhBdH8OAIBs7GQ3eNPFbljeJoosiWfdiSNMuBYvHY&usqp=CAU" width="350" alt="inner join" >
 </p>
 
-*Syntax*:
-sql
+**Syntax**:
+```sql
 SELECT column1, column2, ...
 FROM table1
 RIGHT JOIN table2
 ON table1.column = table2.column;
+```
 
+**Representation**:
 
-*Representation*:
-
+```
 Table A   Table B   RIGHT JOIN
   A1        B1        A1   B1
   A2        B2        A2   B2
             B3       NULL  B3
+```
 
 
-
-*Example*:
+**Example**:
 
 Suppose you have two tables:
 1. employees:
@@ -186,14 +189,15 @@ Suppose you have two tables:
 
 You want to retrieve the names of all departments along with the names of employees working in them, including those departments that have no employees.
 
-sql
+```sql
 SELECT employees.name, departments.department_name
 FROM employees
 RIGHT JOIN departments
 ON employees.department_id = departments.id;
+```
 
+**Result**:
 
-*Result*:
 | name   | department_name |
 |--------|-----------------|
 | Alice  | HR              |
