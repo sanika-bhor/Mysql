@@ -77,3 +77,12 @@ ON employees.department_id = departments.id;
 | Charlie| Sales           |
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
+
+## 2. OUTER JOIN :
+An OUTER JOIN in SQL is used to return all the rows from one table and the matched rows from another table. If no match is found, the result will include NULL values for the columns from the non-matching table. There are three types of outer joins:
+
+1. LEFT JOIN
+2. RIGHT JOIN
+3. FULL JOIN
+----------------------------------------------------------------------------------------------------------------------------------------------
+
