@@ -145,3 +145,65 @@ In this example:
 - "David" does not belong to any department (department_id is NULL), so NULL is displayed in the department_name column.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+## 4. RIGHT OUTER JOIN :
+A RIGHT OUTER JOIN, commonly referred to as a RIGHT JOIN, returns all the records from the right table and the matched records from the left table. If there is no match, NULL values are returned for the columns from the left table.
+
+<p align="center">
+ <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS6_OSio58V6T0ZEDxHzaZU946DBuhBdH8OAIBs7GQ3eNPFbljeJoosiWfdiSNMuBYvHY&usqp=CAU" width="350" alt="inner join" >
+</p>
+
+*Syntax*:
+sql
+SELECT column1, column2, ...
+FROM table1
+RIGHT JOIN table2
+ON table1.column = table2.column;
+
+
+*Representation*:
+
+Table A   Table B   RIGHT JOIN
+  A1        B1        A1   B1
+  A2        B2        A2   B2
+            B3       NULL  B3
+
+
+
+*Example*:
+
+Suppose you have two tables:
+1. employees:
+    - id
+    - name
+    - department_id
+
+2. departments:
+    - id
+    - department_name
+
+
+You want to retrieve the names of all departments along with the names of employees working in them, including those departments that have no employees.
+
+sql
+SELECT employees.name, departments.department_name
+FROM employees
+RIGHT JOIN departments
+ON employees.department_id = departments.id;
+
+
+*Result*:
+| name   | department_name |
+|--------|-----------------|
+| Alice  | HR              |
+| Bob    | IT              |
+| Charlie| Sales           |
+| NULL   | Marketing       |
+
+In this example:
+- "HR", "IT", and "Sales" departments have matching employees, so their names are displayed.
+- "Marketing" does not have any employees, so NULL is displayed in the name column.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
