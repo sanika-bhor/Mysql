@@ -406,3 +406,35 @@ This command will retrive all the data form the users table using WHERE clause t
 
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
+
+## Group By clause :-
+
+The GROUP BY clause in SQL is used to group rows that have the same values in specified columns into aggregated data. It is often used with aggregate functions (COUNT(), SUM(), AVG(), etc.) to perform calculations on each group of rows.
+
+ **Snytax**:
+```sql
+SELECT column1, aggregate_function(column2)
+FROM table_name
+WHERE condition
+GROUP BY column1;
+```
+
+ **Example**:
+Suppose you have a table named `employees` and you want to calculate the total salary for each department.
+```sql
+SELECT department, SUM(salary) AS total_salary
+FROM employees
+GROUP BY department;
+```
+
+**Result**:
+
+| department | total_salary |
+|------------|--------------|
+| HR         | 100000       |
+| IT         | 250000       |
+| Sales      | 150000       |
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
