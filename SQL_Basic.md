@@ -451,6 +451,29 @@ COMMIT;
 **Explanation**:
 After the ROLLBACK TO sp1, the state of the transaction will only reflect the first UPDATE. The second and third updates are undone.
 
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+## Rollback :  
+The ROLLBACK command in SQL is used to undo changes made in the current transaction. When you issue a ROLLBACK, all changes made during the transaction are reverted, and the database is returned to the state it was in before the transaction began. If you’ve used a SAVEPOINT, you can roll back to that specific point, undoing only part of the transaction.
+
+**Snytax**:
+1. Rollback the entire transaction:
+
+```sql
+ROLLBACK;
+```
+
+2. Rollback to a specific savepoint:
+
+```sql
+ROLLBACK TO savepoint_name;
+```
+
+
+
+
+
 
 
 
