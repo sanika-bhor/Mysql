@@ -401,15 +401,6 @@ The REVOKE command in SQL is used to remove previously granted privileges from u
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 
-
-
-
-
-
-
-
-
-
 ## WHERE clause :-
 The WHERE clause in MySQL is used to filter records based on specific conditions. It is used in SELECT, UPDATE, DELETE, and INSERT statements to specify which rows should be affected by the query.
  
