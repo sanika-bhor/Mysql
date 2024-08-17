@@ -385,6 +385,32 @@ This command will retrive all the data form the users table whose passsword is 1
 
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
+## TCL commands :-
+----------------------------------------------------------------------------------------------------------------------------------------------
+  
+## Commit :
+ The COMMIT command in SQL is used to save all changes made in the current transaction permanently to the database. Once a COMMIT is executed, the changes are finalized, and they cannot be undone with a ROLLBACK. It marks the end of a successful transaction, ensuring that all the operations performed within that transaction are stored permanently.
+ 
+ **Snytax**:
+```sql
+COMMIT;
+```
+
+ **Example**:
+```sql
+UPDATE accounts
+SET balance = balance + 500
+WHERE account_id = 2;
+
+COMMIT;
+```
+
+ **Explanation**:
+ Saves updates permanently. If updates are successful, the changes are committed to the database.
+
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
 ## WHERE clause :-
 The WHERE clause in MySQL is used to filter records based on specific conditions. It is used in SELECT, UPDATE, DELETE, and INSERT statements to specify which rows should be affected by the query.
  
