@@ -469,21 +469,31 @@ ROLLBACK;
 ```sql
 ROLLBACK TO savepoint_name;
 ```
+   
+**Example**:
+ ```sql
+BEGIN TRANSACTION;
+
+UPDATE accounts
+SET balance = balance - 500
+WHERE account_id = 1;
+
+UPDATE accounts
+SET balance = balance + 500
+WHERE account_id = 2;
+
+-- An error is detected, so rollback the entire transaction
+ROLLBACK;
+
+```
 
 
-
-
-
-
-
-
-
-
-
-
+**Explanation**:
+Undoes both updates, returning the database to its state before the transaction began.
 
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
+
 ## WHERE clause :-
 The WHERE clause in MySQL is used to filter records based on specific conditions. It is used in SELECT, UPDATE, DELETE, and INSERT statements to specify which rows should be affected by the query.
  
