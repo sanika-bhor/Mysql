@@ -211,3 +211,19 @@ In this example:
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
+
+
+## 4. FULL OUTER JOIN :
+A FULL OUTER JOIN, also known as a FULL JOIN, returns all records when there is a match in either the left or right table. If there is no match, the result will include NULL values for the columns from the table without a match. This join type combines the results of both LEFT JOIN and RIGHT JOIN.
+
+<p align="center">
+ <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6YYG4tJ2ZzP09Je6j3R_1LSFH6OYYrVGzwA&s" width="350" alt="inner join" >
+</p>
+
+**Syntax**:
+```sql
+SELECT column1, column2, ...
+FROM table1
+FULL OUTER JOIN table2
+ON table1.column = table2.column;
+```
