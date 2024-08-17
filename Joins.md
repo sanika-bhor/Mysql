@@ -227,3 +227,56 @@ FROM table1
 FULL OUTER JOIN table2
 ON table1.column = table2.column;
 ```
+
+**Representation**:
+
+```
+Table A   Table B   FULL JOIN
+  A1        B1        A1   B1
+  A2        B2        A2   B2
+  A3                  A3   NULL
+            B3       NULL  B3
+```
+
+
+**Example**:
+
+Suppose you have two tables:
+1. employees:
+    - id
+    - name
+    - department_id
+
+2. departments:
+    - id
+    - department_name
+
+
+You want to retrieve the names of all employees and their department names, including employees who are not assigned to any department and departments that have no employees.
+
+```sql
+SELECT employees.name, departments.department_name
+FROM employees
+FULL OUTER JOIN departments
+ON employees.department_id = departments.id;
+```
+
+**Result**:
+
+| name   | department_name |
+|--------|-----------------|
+| Alice  | HR              |
+| Bob    | IT              |
+| Charlie| Sales           |
+| David  | NULL            |
+| NULL   | Marketing       |
+
+
+In this example:
+- "Alice", "Bob", and "Charlie" have matching departments, so their department names are displayed.
+- "David" does not belong to any department, so NULL is displayed in the department_name column.
+- "Marketing" has no employees, so NULL is displayed in the name column.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
