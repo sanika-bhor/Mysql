@@ -385,114 +385,21 @@ This command will retrive all the data form the users table whose passsword is 1
 
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
-## TCL commands :-
+## DCL commands :-
 ----------------------------------------------------------------------------------------------------------------------------------------------
   
-## Commit :
- The COMMIT command in SQL is used to save all changes made in the current transaction permanently to the database. Once a COMMIT is executed, the changes are finalized, and they cannot be undone with a ROLLBACK. It marks the end of a successful transaction, ensuring that all the operations performed within that transaction are stored permanently.
+## Grant :
+The GRANT command in SQL is used to provide specific privileges to users, roles, or groups. These privileges determine what actions the user can perform on database objects like tables, views, or stored procedures. The GRANT command is essential for managing access control and security in a database system.
  
- **Snytax**:
-```sql
-COMMIT;
-```
-
- **Example**:
-```sql
-UPDATE accounts
-SET balance = balance + 500
-WHERE account_id = 2;
-
-COMMIT;
-```
-
- **Explanation**:
- Saves updates permanently. If updates are successful, the changes are committed to the database.
 
 
 
-<!------------------------------------------------------------->
-----------------------------------------------------------------------------------------------------------------------------------------------
-
-## Savepoint :  
-The SAVEPOINT command in SQL is used to create a savepoint, or a checkpoint, within a transaction. A savepoint allows you to partially roll back a transaction to a specific point without affecting the entire transaction. This is useful when you want to perform multiple operations in a transaction and have the ability to undo certain operations while keeping others intact.
-
-**Snytax**:
-```sql
-SAVEPOINT savepoint_name;
-```
-
-**Example**:
- ```sql
-BEGIN TRANSACTION;
-
-UPDATE accounts
-SET balance = balance - 500
-WHERE account_id = 1;
-
-SAVEPOINT sp1;
-
-UPDATE accounts
-SET balance = balance + 500
-WHERE account_id = 2;
-
-SAVEPOINT sp2;
-
-UPDATE accounts
-SET balance = balance + 1000
-WHERE account_id = 3;
-
--- Something goes wrong, so rollback to savepoint sp1
-ROLLBACK TO sp1;
-
-COMMIT;
-
-```
-
-**Explanation**:
-After the ROLLBACK TO sp1, the state of the transaction will only reflect the first UPDATE. The second and third updates are undone.
-
-<!------------------------------------------------------------->
-----------------------------------------------------------------------------------------------------------------------------------------------
-
-## Rollback :  
-The ROLLBACK command in SQL is used to undo changes made in the current transaction. When you issue a ROLLBACK, all changes made during the transaction are reverted, and the database is returned to the state it was in before the transaction began. If you’ve used a SAVEPOINT, you can roll back to that specific point, undoing only part of the transaction.
-
-**Snytax**:
-1. Rollback the entire transaction:
-
-```sql
-ROLLBACK;
-```
-
-2. Rollback to a specific savepoint:
-
-```sql
-ROLLBACK TO savepoint_name;
-```
-   
-**Example**:
- ```sql
-BEGIN TRANSACTION;
-
-UPDATE accounts
-SET balance = balance - 500
-WHERE account_id = 1;
-
-UPDATE accounts
-SET balance = balance + 500
-WHERE account_id = 2;
-
--- An error is detected, so rollback the entire transaction
-ROLLBACK;
-
-```
 
 
-**Explanation**:
-Undoes both updates, returning the database to its state before the transaction began.
 
-<!------------------------------------------------------------->
-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 ## WHERE clause :-
 The WHERE clause in MySQL is used to filter records based on specific conditions. It is used in SELECT, UPDATE, DELETE, and INSERT statements to specify which rows should be affected by the query.
