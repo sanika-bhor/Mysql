@@ -409,6 +409,56 @@ COMMIT;
  Saves updates permanently. If updates are successful, the changes are committed to the database.
 
 
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+## Savepoint :  
+The SAVEPOINT command in SQL is used to create a savepoint, or a checkpoint, within a transaction. A savepoint allows you to partially roll back a transaction to a specific point without affecting the entire transaction. This is useful when you want to perform multiple operations in a transaction and have the ability to undo certain operations while keeping others intact.
+
+**Snytax**:
+```sql
+SAVEPOINT savepoint_name;
+```
+
+**Example**:
+ ```sql
+BEGIN TRANSACTION;
+
+UPDATE accounts
+SET balance = balance - 500
+WHERE account_id = 1;
+
+SAVEPOINT sp1;
+
+UPDATE accounts
+SET balance = balance + 500
+WHERE account_id = 2;
+
+SAVEPOINT sp2;
+
+UPDATE accounts
+SET balance = balance + 1000
+WHERE account_id = 3;
+
+-- Something goes wrong, so rollback to savepoint sp1
+ROLLBACK TO sp1;
+
+COMMIT;
+
+```
+
+**Explanation**:
+After the ROLLBACK TO sp1, the state of the transaction will only reflect the first UPDATE. The second and third updates are undone.
+
+
+
+
+
+
+
+
+
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
 ## WHERE clause :-
