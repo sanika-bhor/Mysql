@@ -225,6 +225,19 @@ ALTER TABLE products
 MODIFY price DECIMAL(10, 2) DEFAULT 0.00;
 ```
 
+**Example**:
+```sql
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    country VARCHAR(50) DEFAULT 'USA',
+    hire_date DATE DEFAULT CURRENT_DATE
+);
+```
+**Explanation**:
+- The country column has a default value of 'USA'.
+- The hire_date column has a default value of the current date (CURRENT_DATE).
 
 
 **Purpose**:
