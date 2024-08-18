@@ -187,6 +187,22 @@ ADD CONSTRAINT check_age
 CHECK (age >= 18);
 ```
 
+**Example**:
+```sql
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    age INT CHECK (age >= 18),
+    salary DECIMAL(10, 2) CHECK (salary > 0)
+);
+```
+
+**Explanation**:
+- The age column has a CHECK constraint ensuring that the employee's age must be 18 or older.
+- The salary column has a CHECK constraint ensuring that the salary must be greater than 0.
+
+
 **Purpose**:
  Validates that data in a column meets a defined criterion.
  
