@@ -59,7 +59,7 @@ CREATE TABLE orders (
 );
 ```
 
-2. Adding a Primary Key to an Existing Table
+2. Adding a Foreign Key to an Existing Table
 ```sql
 ALTER TABLE orders
 ADD CONSTRAINT fk_user_id
@@ -104,7 +104,7 @@ CREATE TABLE users (
 );
 ```
 
-2. Adding a Primary Key to an Existing Table
+2. Adding a Not Null to an Existing Table
 ```sql
 ALTER TABLE users
 MODIFY username VARCHAR(50) NOT NULL;
@@ -136,12 +136,14 @@ CREATE TABLE employees (
 Ensures that all values in a column are different.
 
 **Syntax**:
+1. Create Not null while creating Table.
 ```sql
 CREATE TABLE users (
     id INT PRIMARY KEY,
     email VARCHAR(100) UNIQUE
 );
 ```
+
 
 **Example**:
 ```sql
