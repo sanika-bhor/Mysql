@@ -169,7 +169,7 @@ MODIFY id INT AUTO_INCREMENT;
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 ### Creating a Table with Multiple Constraints:
-Automatically generates a unique number for each new record in a table.
+Here's an example that combines several constraints in one table.
 
 **Syntax**:
 ```sql
