@@ -173,14 +173,14 @@ CREATE TABLE users (
 Ensures that all values in a column satisfy a specific condition.
 
 **Syntax**:
+1. Create check while creating Table.
 ```sql
 CREATE TABLE employees (
     id INT PRIMARY KEY,
     age INT CHECK (age >= 18)
 );
 ```
-
-**Example**:
+2. Adding a check to an Existing Table
 ```sql
 ALTER TABLE employees
 ADD CONSTRAINT check_age
