@@ -50,6 +50,7 @@ Ensures that each record in the table can be uniquely identified.
 Ensures referential integrity between two tables by linking the FOREIGN KEY in one table to the PRIMARY KEY in another.
 
 **Syntax**:
+1. Create Primary key while creating Table.
 ```sql
 CREATE TABLE orders (
     order_id INT PRIMARY KEY,
@@ -58,12 +59,32 @@ CREATE TABLE orders (
 );
 ```
 
-**Example**:
+2. Adding a Primary Key to an Existing Table
 ```sql
 ALTER TABLE orders
 ADD CONSTRAINT fk_user_id
 FOREIGN KEY (user_id) REFERENCES users(id);
 ```
+
+**Example**:
+```sql
+CREATE TABLE customers (
+    customer_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50)
+);
+
+CREATE TABLE orders (
+    order_id INT PRIMARY KEY,
+    order_date DATE,
+    customer_id INT,
+    FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
+);
+```
+
+**Explanation**:
+- The orders table's customer_id column is a foreign key that references the customer_id column in the customers table.
+- This means that every customer_id in the orders table must match an existing customer_id in the customers table.
 
 **Purpose**:
 Maintains a relationship between two tables, ensuring that records in one table correspond to valid records in another.
