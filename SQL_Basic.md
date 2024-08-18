@@ -385,6 +385,22 @@ This command will retrive all the data form the users table whose passsword is 1
 
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
+## DCL commands :-
+----------------------------------------------------------------------------------------------------------------------------------------------
+  
+## Grant :
+The GRANT command in SQL is used to provide specific privileges to users, roles, or groups. These privileges determine what actions the user can perform on database objects like tables, views, or stored procedures. The GRANT command is essential for managing access control and security in a database system.
+ 
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+## Revoke :  
+The REVOKE command in SQL is used to remove previously granted privileges from users, roles, or groups. It essentially undoes the permissions that were granted by the GRANT command, preventing users from performing certain actions on database objects.
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
 ## WHERE clause :-
 The WHERE clause in MySQL is used to filter records based on specific conditions. It is used in SELECT, UPDATE, DELETE, and INSERT statements to specify which rows should be affected by the query.
  

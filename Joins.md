@@ -213,7 +213,7 @@ In this example:
 
 
 
-## 4. FULL OUTER JOIN :
+## 5. FULL OUTER JOIN :
 A FULL OUTER JOIN, also known as a FULL JOIN, returns all records when there is a match in either the left or right table. If there is no match, the result will include NULL values for the columns from the table without a match. This join type combines the results of both LEFT JOIN and RIGHT JOIN.
 
 <p align="center">
@@ -277,4 +277,72 @@ In this example:
 - "David" does not belong to any department, so NULL is displayed in the department_name column.
 - "Marketing" has no employees, so NULL is displayed in the name column.
 
+<<<<<<< HEAD
 ----------------------------------------------------------------------------------------------------------------------------------------------
+=======
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+## 6. SELF JOIN :
+A SELF JOIN is a type of join in SQL where a table is joined with itself. This is useful when you need to compare rows within the same table or when you want to retrieve related data that is stored in the same table.
+
+<p align="center">
+ <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbA44-pNqEt3dcv90KM-7NtQI6IgQQ-Uajmg&s" width="350" alt="inner join" >
+</p>
+
+**Syntax**:
+```sql
+SELECT column1, column2, ...
+FROM table1 alias1
+JOIN table1 alias2
+ON alias1.column = alias2.column;
+```
+
+**Representation**:
+
+```
+Table A   SELF JOIN
+  A1        A1
+  A2        A2
+  A3        A3
+```
+
+
+**Example**:
+
+Suppose you have two tables:
+1. employees:
+   - id
+   - name
+   - manager_id
+
+
+
+You want to find out the names of employees along with the names of their managers.
+
+```sql
+SELECT e1.name AS employee_name, e2.name AS manager_name
+FROM employees e1
+JOIN employees e2
+ON e1.manager_id = e2.id;
+```
+
+**Result**:
+
+| employee_name | manager_name |
+|---------------|--------------|
+| Alice         | Bob          |
+| Charlie       | Bob          |
+| David         | Alice        |
+
+
+In this example:
+- e1 is an alias for the employees who are reporting to a manager.
+- e2 is an alias for the employees who are managers.
+- The SELF JOIN is performed where e1.manager_id equals e2.id.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+>>>>>>> 1bc332527b509c6823e6f8606b1f7dc8c1e1f909
