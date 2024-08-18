@@ -143,13 +143,25 @@ CREATE TABLE users (
     email VARCHAR(100) UNIQUE
 );
 ```
-
-
-**Example**:
+2. Adding Unique to an Existing Table
 ```sql
 ALTER TABLE users
 ADD CONSTRAINT unique_email UNIQUE (email);
 ```
+
+**Example**:
+```sql
+CREATE TABLE users (
+    user_id INT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE,
+    email VARCHAR(100) UNIQUE,
+    password VARCHAR(100)
+);
+```
+**Explanation**:
+- The username and email columns have the UNIQUE constraint.
+- This ensures that no two users can have the same username or email.
+- Multiple UNIQUE constraints are allowed, unlike the primary key which is unique to a single column or combination.
 
 **Purpose**:
  Guarantees that no duplicate values are entered in the column.
