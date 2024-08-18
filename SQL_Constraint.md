@@ -212,18 +212,20 @@ CREATE TABLE employees (
 Provides a default value for a column when no value is specified.
 
 **Syntax**:
+1. Create default while creating Table.
 ```sql
 CREATE TABLE products (
     product_id INT PRIMARY KEY,
     price DECIMAL(10, 2) DEFAULT 0.00
 );
 ```
-
-**Example**:
+2. Adding a default to an Existing Table
 ```sql
 ALTER TABLE products
 MODIFY price DECIMAL(10, 2) DEFAULT 0.00;
 ```
+
+
 
 **Purpose**:
  Automatically fills in a value if no value is provided for the column during an insert.
