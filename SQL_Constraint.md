@@ -12,6 +12,7 @@ SQL constraints are rules applied to columns in a database table to ensure the i
 Uniquely identifies each record in a table. It is a combination of NOT NULL and UNIQUE.
 
 **Syntax**:
+1. Create Primary key while creating Table.
 ```sql
 CREATE TABLE users (
     id INT PRIMARY KEY,
@@ -19,11 +20,26 @@ CREATE TABLE users (
 );
 ```
 
-**Example**:
+2. Adding a Primary Key to an Existing Table
 ```sql
 ALTER TABLE users
 ADD PRIMARY KEY (id);
 ```
+
+**Example**:
+```sql
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    department VARCHAR(50)
+);
+
+```
+**Explanation**:
+- employee_id is the primary key for the employees table.
+- Each employee will have a unique employee_id, and no two employees can share the same ID.
+- The employee_id cannot be NULL.
 
 **Purpose**:
 Ensures that each record in the table can be uniquely identified.
