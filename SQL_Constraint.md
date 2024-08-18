@@ -50,7 +50,7 @@ Ensures that each record in the table can be uniquely identified.
 Ensures referential integrity between two tables by linking the FOREIGN KEY in one table to the PRIMARY KEY in another.
 
 **Syntax**:
-1. Create Primary key while creating Table.
+1. Create Foreign key while creating Table.
 ```sql
 CREATE TABLE orders (
     order_id INT PRIMARY KEY,
@@ -96,6 +96,7 @@ Maintains a relationship between two tables, ensuring that records in one table 
 Ensures that a column cannot have a NULL value.
 
 **Syntax**:
+1. Create Not null while creating Table.
 ```sql
 CREATE TABLE users (
     id INT PRIMARY KEY,
@@ -103,11 +104,27 @@ CREATE TABLE users (
 );
 ```
 
-**Example**:
+2. Adding a Primary Key to an Existing Table
 ```sql
 ALTER TABLE users
 MODIFY username VARCHAR(50) NOT NULL;
 ```
+
+**Example**:
+```sql
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    hire_date DATE NOT NULL
+);
+```
+
+**Explanation**:
+- The first_name, last_name, email, and hire_date columns are all defined with the NOT NULL constraint.
+- Every employee record must have a first_name, last_name, email, and hire_date.
+- If an attempt is made to insert a record without values for these columns, the database will throw an error.
 
 **Purpose**:
  Prevents missing or undefined data in the specified column.
