@@ -91,7 +91,7 @@ Maintains a relationship between two tables, ensuring that records in one table 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 
-### 3. NOT NULL:
+### 3. NOT NULL :
 Ensures that a column cannot have a NULL value.
 
 **Syntax**:
@@ -131,7 +131,7 @@ CREATE TABLE employees (
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 
-### 4. UNIQUE:
+### 4. UNIQUE :
 Ensures that all values in a column are different.
 
 **Syntax**:
