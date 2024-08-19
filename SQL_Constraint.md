@@ -168,7 +168,7 @@ CREATE TABLE users (
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 
-### 5. CHECK:
+### 5. CHECK :
 Ensures that all values in a column satisfy a specific condition.
 
 **Syntax**:
@@ -207,7 +207,7 @@ CREATE TABLE employees (
  
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-### 6. DEFAULT:
+### 6. DEFAULT :
 Provides a default value for a column when no value is specified.
 
 **Syntax**:
