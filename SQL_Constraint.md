@@ -244,7 +244,7 @@ CREATE TABLE employees (
  
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-### 6. AUTO_INCREMENT:
+### 6. AUTO_INCREMENT :
 Automatically generates a unique number for each new record in a table.
 
 **Syntax**:
@@ -270,6 +270,7 @@ MODIFY id INT AUTO_INCREMENT;
 Here's an example that combines several constraints in one table.
 
 **Syntax**:
+
 ```sql
 CREATE TABLE employees (
     id INT AUTO_INCREMENT PRIMARY KEY,
