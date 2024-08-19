@@ -7,7 +7,7 @@ SQL constraints are rules applied to columns in a database table to ensure the i
 
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
-### 1. PRIMARY KEY:
+### 1. PRIMARY KEY :
 Uniquely identifies each record in a table. It is a combination of NOT NULL and UNIQUE.
 
 **Syntax**:
@@ -45,7 +45,7 @@ Ensures that each record in the table can be uniquely identified.
  
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-### 2. FOREIGN KEY:
+### 2. FOREIGN KEY :
 Ensures referential integrity between two tables by linking the FOREIGN KEY in one table to the PRIMARY KEY in another.
 
 **Syntax**:
