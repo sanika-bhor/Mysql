@@ -273,6 +273,10 @@ CREATE TABLE employees (
 - The employee_id column is defined with the AUTO_INCREMENT attribute, meaning it will automatically generate a unique integer for each new row.
 - The employee_id column also serves as the primary key for the table.
 
+**Purpose**:
+ Automatically assigns a unique value to the primary key field when a new record is inserted.
+ 
+
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 ### Creating a Table with Multiple Constraints:
