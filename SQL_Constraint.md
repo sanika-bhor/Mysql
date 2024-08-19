@@ -260,7 +260,18 @@ CREATE TABLE users (
 ALTER TABLE users
 MODIFY id INT AUTO_INCREMENT;
 ```
-
+**Example**:
+```sql
+CREATE TABLE employees (
+    employee_id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    email VARCHAR(100)
+);
+```
+**Explanation**:
+- The employee_id column is defined with the AUTO_INCREMENT attribute, meaning it will automatically generate a unique integer for each new row.
+- The employee_id column also serves as the primary key for the table.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
