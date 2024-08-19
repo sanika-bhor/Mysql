@@ -7,7 +7,6 @@ SQL constraints are rules applied to columns in a database table to ensure the i
 
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
-
 ### 1. PRIMARY KEY:
 Uniquely identifies each record in a table. It is a combination of NOT NULL and UNIQUE.
 
