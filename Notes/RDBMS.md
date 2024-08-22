@@ -26,6 +26,7 @@
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 ## * Types of RDBMS SOftware :-
+
   ↪ **Oracle**
   - Oracle database is most widely used object-relational database management software.
   - it suport multiple versions of windows, unix and linux OSs.
