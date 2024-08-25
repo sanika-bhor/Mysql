@@ -277,7 +277,6 @@ In this example:
 - "David" does not belong to any department, so NULL is displayed in the department_name column.
 - "Marketing" has no employees, so NULL is displayed in the name column.
 
-<<<<<<< HEAD
 ----------------------------------------------------------------------------------------------------------------------------------------------
 =======
 ----------------------------------------------------------------------------------------------------------------------------------------------
