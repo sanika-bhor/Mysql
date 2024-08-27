@@ -27,3 +27,23 @@ You have an error in your SQL syntax; check the manual that corresponds to your 
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+### 2. Missing or Incorrect Identifiers:
+Occur when a table, column, or other identifier is misspelled or does not exist.
+
+**Common Examples:**
+- Misspelled Table Names: Referring to a table as employes instead of employees.
+- Nonexistent Columns: Selecting a column age from a table where the column does not exist.
+  
+**Example**:
+```sql
+SELECT age FROM employes;
+```
+
+**Error**:
+Unknown column 'age' in 'field list'.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
