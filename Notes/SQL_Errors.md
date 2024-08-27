@@ -19,7 +19,7 @@ Occur when the SQL statement is not written according to the syntax rules of the
 - Missing Keywords: Omitting the FROM clause in a SELECT statement.
 - Incorrect Clauses: Using WHERE instead of HAVING after GROUP BY.
 
-**Syntax**:
+**Example**:
 ```sql
 SELCT * FROM employees;
 ```
