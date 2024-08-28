@@ -48,7 +48,7 @@ Unknown column 'age' in 'field list'.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 
-### 2. Data Type Mismatch:
+### 3. Data Type Mismatch:
 Occur when an operation involves incompatible data types, such as trying to compare a string to an integer.
 
 **Common Examples:**
@@ -65,3 +65,12 @@ Truncated incorrect DOUBLE value: 'high'.
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+### 4.  Constraint Violations:
+ Occur when an operation violates a constraint, such as a PRIMARY KEY, UNIQUE, NOT NULL, CHECK, or FOREIGN KEY constraint.
+
+**Common Examples:**
+- Primary Key Violation: Attempting to insert a duplicate value into a column with a PRIMARY KEY constraint.
+- Foreign Key Violation: Trying to insert a value into a column that references a non-existing value in another table.
+
