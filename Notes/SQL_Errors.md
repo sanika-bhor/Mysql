@@ -47,3 +47,77 @@ Unknown column 'age' in 'field list'.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
+
+### 3. Data Type Mismatch:
+Occur when an operation involves incompatible data types, such as trying to compare a string to an integer.
+
+**Common Examples:**
+- Comparing Incompatible Types: Trying to compare a text value with a numeric value.
+- Inserting Invalid Data: Trying to insert a string into an integer column.
+
+**Example**:
+```sql
+SELECT * FROM employees WHERE salary = 'high';
+```
+
+**Error**:
+Truncated incorrect DOUBLE value: 'high'.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+### 4.  Constraint Violations:
+ Occur when an operation violates a constraint, such as a PRIMARY KEY, UNIQUE, NOT NULL, CHECK, or FOREIGN KEY constraint.
+
+**Common Examples:**
+- Primary Key Violation: Attempting to insert a duplicate value into a column with a PRIMARY KEY constraint.
+- Foreign Key Violation: Trying to insert a value into a column that references a non-existing value in another table.
+
+
+**Example**:
+```sql
+INSERT INTO employees (employee_id, first_name) VALUES (1, 'Sanika');
+INSERT INTO employees (employee_id, first_name) VALUES (1, 'Sumit');
+
+```
+
+**Error**:
+Duplicate entry '1' for key 'PRIMARY'
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+### 5. Division by Zero:
+Occurs when a query attempts to divide a number by zero, which is undefined in mathematics.
+
+**Example**:
+```sql
+SELECT salary / 0 FROM employees;
+```
+
+**Error**:
+ERROR 1365 (22012): Division by 0.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+### 5. NULL Value Errors:
+Occur when operations involving NULL values are not handled properly, especially in calculations or constraints.
+
+**Common Examples:**
+- Calculation with NULL: Trying to add or multiply NULL values without using functions like COALESCE.
+- NULL in a NOT NULL Column: Inserting a NULL value into a column that has a NOT NULL constraint.
+
+  **Example**:
+```sql
+INSERT INTO employees (employee_id, first_name, salary) VALUES (3, 'Sara', NULL);
+```
+
+**Error**:
+Column 'salary' cannot be null.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
