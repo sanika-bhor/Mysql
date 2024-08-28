@@ -60,3 +60,8 @@ Occur when an operation involves incompatible data types, such as trying to comp
 SELECT * FROM employees WHERE salary = 'high';
 ```
 
+**Error**:
+Truncated incorrect DOUBLE value: 'high'.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
