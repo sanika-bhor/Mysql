@@ -101,3 +101,13 @@ SELECT salary / 0 FROM employees;
 ERROR 1365 (22012): Division by 0.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+### 5. NULL Value Errors:
+Occur when operations involving NULL values are not handled properly, especially in calculations or constraints.
+
+**Common Examples:**
+- Calculation with NULL: Trying to add or multiply NULL values without using functions like COALESCE.
+- NULL in a NOT NULL Column: Inserting a NULL value into a column that has a NOT NULL constraint.
+  
