@@ -86,3 +86,18 @@ INSERT INTO employees (employee_id, first_name) VALUES (1, 'Sumit');
 Duplicate entry '1' for key 'PRIMARY'
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+### 5. Division by Zero:
+Occurs when a query attempts to divide a number by zero, which is undefined in mathematics.
+
+**Example**:
+```sql
+SELECT salary / 0 FROM employees;
+```
+
+**Error**:
+ERROR 1365 (22012): Division by 0.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
