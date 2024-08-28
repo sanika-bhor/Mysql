@@ -110,4 +110,14 @@ Occur when operations involving NULL values are not handled properly, especially
 **Common Examples:**
 - Calculation with NULL: Trying to add or multiply NULL values without using functions like COALESCE.
 - NULL in a NOT NULL Column: Inserting a NULL value into a column that has a NOT NULL constraint.
-  
+
+  **Example**:
+```sql
+INSERT INTO employees (employee_id, first_name, salary) VALUES (3, 'Sara', NULL);
+```
+
+**Error**:
+Column 'salary' cannot be null.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
