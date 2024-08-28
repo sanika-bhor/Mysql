@@ -47,3 +47,16 @@ Unknown column 'age' in 'field list'.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
+
+### 2. Data Type Mismatch:
+Occur when an operation involves incompatible data types, such as trying to compare a string to an integer.
+
+**Common Examples:**
+- Comparing Incompatible Types: Trying to compare a text value with a numeric value.
+- Inserting Invalid Data: Trying to insert a string into an integer column.
+
+**Example**:
+```sql
+SELECT * FROM employees WHERE salary = 'high';
+```
+
