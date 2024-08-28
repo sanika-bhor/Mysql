@@ -74,3 +74,15 @@ Truncated incorrect DOUBLE value: 'high'.
 - Primary Key Violation: Attempting to insert a duplicate value into a column with a PRIMARY KEY constraint.
 - Foreign Key Violation: Trying to insert a value into a column that references a non-existing value in another table.
 
+
+**Example**:
+```sql
+INSERT INTO employees (employee_id, first_name) VALUES (1, 'Sanika');
+INSERT INTO employees (employee_id, first_name) VALUES (1, 'Sumit');
+
+```
+
+**Error**:
+Duplicate entry '1' for key 'PRIMARY'
+
+----------------------------------------------------------------------------------------------------------------------------------------------
