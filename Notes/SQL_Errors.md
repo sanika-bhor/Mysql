@@ -150,4 +150,16 @@ Occur when a subquery returns more than one row where only a single value is exp
 
 - Too Many Rows in Subquery: Using a subquery in a context where only one row is expected but the subquery returns multiple rows.
   
+  **Example**:
+  
+```sql
+SELECT * FROM employees WHERE salary = (SELECT salary FROM employees);
+```
+
+**Error**:
+
+Subquery returns more than 1 row.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
 
