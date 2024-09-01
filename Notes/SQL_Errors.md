@@ -143,3 +143,11 @@ In aggregated query without GROUP BY, expression #1 of SELECT list contains nona
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 
+### 8. Subquery Errors:
+Occur when a subquery returns more than one row where only a single value is expected or when subqueries are used incorrectly.
+
+**Common Examples:**
+
+- Too Many Rows in Subquery: Using a subquery in a context where only one row is expected but the subquery returns multiple rows.
+  
+
