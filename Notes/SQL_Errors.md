@@ -127,6 +127,19 @@ Column 'salary' cannot be null.
 Occur when aggregate functions (like SUM, AVG, COUNT, etc.) are used incorrectly, especially in conjunction with non-aggregated columns.
 
 **Common Examples:**
+
 - Non-Aggregated Columns in SELECT: Trying to select a non-aggregated column without a GROUP BY clause.
   
+  **Example**:
+  
+```sql
+SELECT employee_id, SUM(salary) FROM employees;
+```
+
+**Error**:
+
+In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'employees.employee_id'; this is incompatible with sql_mode=only_full_group_by.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
 
