@@ -192,5 +192,15 @@ Occur when a query takes too long to execute, often due to inefficiencies, lack 
 
 - Long-Running Queries: Queries that involve complex calculations or large datasets without proper indexing.
 
+**Example**:
+  
+```sql
+SELECT employee_id, department_id FROM employees JOIN departments ON employees.department_id = departments.department_id;
+```
 
+**Error**:
+
+Column 'department_id' in field list is ambiguous.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
 
