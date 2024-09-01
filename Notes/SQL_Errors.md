@@ -164,7 +164,7 @@ Subquery returns more than 1 row.
 
 
 
-### 8. Joins with Ambiguous Columns:
+### 9. Joins with Ambiguous Columns:
 Occur when joining tables without specifying which table a column belongs to, leading to ambiguity.
 
 **Common Examples:**
@@ -183,4 +183,14 @@ SELECT employee_id, department_id FROM employees JOIN departments ON employees.d
 Column 'department_id' in field list is ambiguous.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+### 10. Timeout Errors:
+Occur when a query takes too long to execute, often due to inefficiencies, lack of indexes, or large datasets.
+
+**Common Examples:**
+
+- Long-Running Queries: Queries that involve complex calculations or large datasets without proper indexing.
+
+
 
