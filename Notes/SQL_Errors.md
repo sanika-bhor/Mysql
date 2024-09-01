@@ -23,6 +23,7 @@ SELCT * FROM employees;
 ```
 
 **Error**:
+
 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELCT * FROM employees'.
 
 
@@ -42,6 +43,7 @@ SELECT age FROM employes;
 ```
 
 **Error**:
+
 Unknown column 'age' in 'field list'.
 
 
@@ -61,6 +63,7 @@ SELECT * FROM employees WHERE salary = 'high';
 ```
 
 **Error**:
+
 Truncated incorrect DOUBLE value: 'high'.
 
 
@@ -83,6 +86,7 @@ INSERT INTO employees (employee_id, first_name) VALUES (1, 'Sumit');
 ```
 
 **Error**:
+
 Duplicate entry '1' for key 'PRIMARY'
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
@@ -98,6 +102,7 @@ SELECT salary / 0 FROM employees;
 ```
 
 **Error**:
+
 ERROR 1365 (22012): Division by 0.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
@@ -117,6 +122,7 @@ INSERT INTO employees (employee_id, first_name, salary) VALUES (3, 'Sara', NULL)
 ```
 
 **Error**:
+
 Column 'salary' cannot be null.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
