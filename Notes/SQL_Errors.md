@@ -163,3 +163,11 @@ Subquery returns more than 1 row.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 
+
+### 8. Joins with Ambiguous Columns:
+Occur when joining tables without specifying which table a column belongs to, leading to ambiguity.
+
+**Common Examples:**
+
+- Ambiguous Column Names: Using a column name that exists in more than one table in a JOIN operation without prefixing it with the table name or alias.
+  
