@@ -104,7 +104,7 @@ ERROR 1365 (22012): Division by 0.
 
 
 
-### 5. NULL Value Errors:
+### 6. NULL Value Errors:
 Occur when operations involving NULL values are not handled properly, especially in calculations or constraints.
 
 **Common Examples:**
@@ -120,4 +120,13 @@ INSERT INTO employees (employee_id, first_name, salary) VALUES (3, 'Sara', NULL)
 Column 'salary' cannot be null.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+### 7. Incorrect Use of Aggregates:
+Occur when aggregate functions (like SUM, AVG, COUNT, etc.) are used incorrectly, especially in conjunction with non-aggregated columns.
+
+**Common Examples:**
+- Non-Aggregated Columns in SELECT: Trying to select a non-aggregated column without a GROUP BY clause.
+  
 
