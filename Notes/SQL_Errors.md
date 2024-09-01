@@ -111,7 +111,7 @@ Occur when operations involving NULL values are not handled properly, especially
 - Calculation with NULL: Trying to add or multiply NULL values without using functions like COALESCE.
 - NULL in a NOT NULL Column: Inserting a NULL value into a column that has a NOT NULL constraint.
 
-  **Example**:
+**Example**:
 ```sql
 INSERT INTO employees (employee_id, first_name, salary) VALUES (3, 'Sara', NULL);
 ```
@@ -130,7 +130,7 @@ Occur when aggregate functions (like SUM, AVG, COUNT, etc.) are used incorrectly
 
 - Non-Aggregated Columns in SELECT: Trying to select a non-aggregated column without a GROUP BY clause.
   
-  **Example**:
+**Example**:
   
 ```sql
 SELECT employee_id, SUM(salary) FROM employees;
@@ -150,7 +150,7 @@ Occur when a subquery returns more than one row where only a single value is exp
 
 - Too Many Rows in Subquery: Using a subquery in a context where only one row is expected but the subquery returns multiple rows.
   
-  **Example**:
+**Example**:
   
 ```sql
 SELECT * FROM employees WHERE salary = (SELECT salary FROM employees);
@@ -172,7 +172,7 @@ Occur when joining tables without specifying which table a column belongs to, le
 - Ambiguous Column Names: Using a column name that exists in more than one table in a JOIN operation without prefixing it with the table name or alias.
 
 
-  **Example**:
+**Example**:
   
 ```sql
 SELECT employee_id, department_id FROM employees JOIN departments ON employees.department_id = departments.department_id;
