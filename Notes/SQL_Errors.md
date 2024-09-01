@@ -170,4 +170,17 @@ Occur when joining tables without specifying which table a column belongs to, le
 **Common Examples:**
 
 - Ambiguous Column Names: Using a column name that exists in more than one table in a JOIN operation without prefixing it with the table name or alias.
+
+
+  **Example**:
   
+```sql
+SELECT employee_id, department_id FROM employees JOIN departments ON employees.department_id = departments.department_id;
+```
+
+**Error**:
+
+Column 'department_id' in field list is ambiguous.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
