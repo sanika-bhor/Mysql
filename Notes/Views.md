@@ -90,7 +90,7 @@ WHERE salary > 60000;
 
 
 
-**Step 3: Using the View**
+### **Step 3: Using the View**
 After the view is created, you can query it just like a regular table:
 
 **Example**:
@@ -98,7 +98,7 @@ After the view is created, you can query it just like a regular table:
 SELECT * FROM high_earners;
 ```
 
-**Result:**
+### **Result:**
 
 This will return a list of employees from the employees table who earn more than $60,000, showing only the employee_id, first_name, last_name, and salary.
 
