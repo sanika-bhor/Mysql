@@ -65,7 +65,7 @@ Suppose you have a table named `employees` with the following columns:
 You want to create a view that shows only the `employee_id`, `first_name`, `last_name`, and `salary` for employees who earn more than $60,000.
 
 
-**Step 1: Define the SQL Query**
+### **Step 1: Define the SQL Query**
 
 First, write the SQL query that retrieves the data you want to include in the view:
 
@@ -76,7 +76,7 @@ FROM employees
 WHERE salary > 60000;
 ```
 
-**Step 2: Create the View**
+### **Step 2: Create the View**
 Now, use the CREATE VIEW statement to create the view based on the query:
 
 
