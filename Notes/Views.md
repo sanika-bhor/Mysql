@@ -56,9 +56,10 @@ WHERE condition;
 
 ### Step-by-Step Example
 Suppose you have a table named `employees` with the following columns:
-`employee_id`
-`first_name`
-`last_name`
-`salary`
-`department_id`
+- *employee_id*
+- *first_name*
+- *last_name*
+- *salary*
+- *department_id*
+
 You want to create a view that shows only the `employee_id`, `first_name`, `last_name`, and `salary` for employees who earn more than $60,000.
