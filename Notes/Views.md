@@ -21,3 +21,20 @@ In SQL, a view is a virtual table based on the result set of a SQL query. Unlike
 - **Simplify Complex Queries:** Views can encapsulate complex queries, making it easier to use and understand.
 - **Security:** Views can limit user access to specific rows or columns, providing a layer of security by restricting direct access to the   underlying tables.
 - **Updateable Views**: Some views are updatable, meaning you can insert, update, or delete rows through the view, but with certain limitations.
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+## purpose of view
+
+The purpose of a **view** in SQL is to simplify how you interact with data. Think of a view as a "virtual table" that shows specific data from one or more real tables, without storing the data itself. Here's a breakdown of its main purposes:
+
+1. **Simplify Complex Queries**: Views can combine multiple tables or apply filters, making it easier to retrieve and work with data.
+   
+2. **Enhance Security**: Views can limit access to sensitive data by only showing certain columns or rows, so users can see what they need without accessing the entire table.
+   
+3. **Provide Consistent Data Format**: Views can present data in a specific format or structure, useful for reporting or analysis.
+   
+4. **Decouple Database Structure**: If the underlying table structure changes, you can update the view without affecting the queries that rely on it.
+
+In essence, a view makes your interaction with the database simpler, safer, and more efficient.
