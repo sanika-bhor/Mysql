@@ -87,3 +87,29 @@ SELECT employee_id, first_name, last_name, salary
 FROM employees
 WHERE salary > 60000;
 ```
+
+
+
+**Step 3: Using the View**
+After the view is created, you can query it just like a regular table:
+
+**Example**:
+```sql
+SELECT * FROM high_earners;
+```
+
+**Result:**
+
+This will return a list of employees from the employees table who earn more than $60,000, showing only the employee_id, first_name, last_name, and salary.
+
+
+| employee_id | first_name | last_name | salary |
+|-------------|------------|-----------|--------|
+| 101         | Sanika     | Bhor      | 68900  |
+| 109         | Sumit      | Bhor      | 75000  |
+| 131         | Disha      | Satpute   | 67000  |
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
