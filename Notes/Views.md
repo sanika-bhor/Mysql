@@ -38,3 +38,27 @@ The purpose of a **view** in SQL is to simplify how you interact with data. Thin
 4. **Decouple Database Structure**: If the underlying table structure changes, you can update the view without affecting the queries that rely on it.
 
 In essence, a view makes your interaction with the database simpler, safer, and more efficient.
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+## Creating a View:
+
+Creating a view in SQL involves defining a virtual table based on the result set of a SQL query. The view is then stored in the database, allowing you to query it just like a regular table.
+
+**Syntax**:
+```sql
+CREATE VIEW view_name AS
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+```
+
+### Step-by-Step Example
+Suppose you have a table named `employees` with the following columns:
+`employee_id`
+`first_name`
+`last_name`
+`salary`
+`department_id`
+You want to create a view that shows only the `employee_id`, `first_name`, `last_name`, and `salary` for employees who earn more than $60,000.
