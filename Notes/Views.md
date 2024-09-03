@@ -125,3 +125,17 @@ SELECT column1, column2, ...
 FROM view_name
 WHERE condition;
 
+
+### Example 1: Basic Query
+
+Suppose you have a view named high_earners that was created to show employees who earn more than $60,000. You can query this view to get the data:
+
+*Example*:
+sql
+SELECT * FROM high_earners;
+
+
+*Explanation:*
+
+- This query selects all columns and rows from the high_earners view.
+
