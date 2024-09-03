@@ -154,3 +154,18 @@ WHERE salary > 80000;
 
 - This query selects the first_name and last_name of employees from the high_earners view who have a salary greater than $80,000.
 
+
+### Example 3: Sorting Data from a View
+You can order the results retrieved from a view:
+
+*Example*:
+sql
+SELECT employee_id, first_name, salary
+FROM high_earners
+ORDER BY salary DESC;
+
+
+*Explanation:*
+
+- This query selects the employee_id, first_name, and salary from the high_earners view and orders the results by salary in descending order.
+
