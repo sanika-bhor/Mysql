@@ -139,3 +139,18 @@ SELECT * FROM high_earners;
 
 - This query selects all columns and rows from the high_earners view.
 
+### Example 2: Filtering Data from a View
+
+You can also apply additional filters to the data retrieved from a view, just as you would with a table:
+
+*Example*:
+sql
+SELECT first_name, last_name
+FROM high_earners
+WHERE salary > 80000;
+
+
+*Explanation:*
+
+- This query selects the first_name and last_name of employees from the high_earners view who have a salary greater than $80,000.
+
