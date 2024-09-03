@@ -70,6 +70,7 @@ You want to create a view that shows only the `employee_id`, `first_name`, `last
 First, write the SQL query that retrieves the data you want to include in the view:
 
 **Example**:
+
 ```sql
 SELECT employee_id, first_name, last_name, salary
 FROM employees
@@ -81,6 +82,7 @@ Now, use the CREATE VIEW statement to create the view based on the query:
 
 
 **Example**:
+
 ```sql
 CREATE VIEW high_earners AS
 SELECT employee_id, first_name, last_name, salary
@@ -94,6 +96,7 @@ WHERE salary > 60000;
 After the view is created, you can query it just like a regular table:
 
 **Example**:
+
 ```sql
 SELECT * FROM high_earners;
 ```
@@ -131,9 +134,10 @@ WHERE condition;
 Suppose you have a view named high_earners that was created to show employees who earn more than $60,000. You can query this view to get the data:
 
 *Example*:
-sql
-SELECT * FROM high_earners;
 
+```sql
+SELECT * FROM high_earners;
+```
 
 *Explanation:*
 
@@ -144,11 +148,11 @@ SELECT * FROM high_earners;
 You can also apply additional filters to the data retrieved from a view, just as you would with a table:
 
 *Example*:
-sql
+```sql
 SELECT first_name, last_name
 FROM high_earners
 WHERE salary > 80000;
-
+```
 
 *Explanation:*
 
@@ -159,11 +163,11 @@ WHERE salary > 80000;
 You can order the results retrieved from a view:
 
 *Example*:
-sql
+```sql
 SELECT employee_id, first_name, salary
 FROM high_earners
 ORDER BY salary DESC;
-
+```
 
 *Explanation:*
 
@@ -174,10 +178,10 @@ ORDER BY salary DESC;
 You can perform aggregate functions like COUNT, SUM, AVG, etc., on data from a view:
 
 *Example*:
-sql
+```sql
 SELECT COUNT(*) AS total_high_earners
 FROM high_earners;
-
+```
 
 *Explanation:*
 
