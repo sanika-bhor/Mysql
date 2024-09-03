@@ -112,3 +112,16 @@ This will return a list of employees from the employees table who earn more than
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+## Querying a View:
+
+Querying a view in SQL is just like querying a regular table. Once a view is created, you can retrieve data from it using the SELECT statement. Here’s how you can do. it
+
+*Syntax*:
+sql
+SELECT column1, column2, ...
+FROM view_name
+WHERE condition;
+
