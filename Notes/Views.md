@@ -169,3 +169,20 @@ ORDER BY salary DESC;
 
 - This query selects the employee_id, first_name, and salary from the high_earners view and orders the results by salary in descending order.
 
+
+### Example 4: Aggregating Data from a View
+You can perform aggregate functions like COUNT, SUM, AVG, etc., on data from a view:
+
+*Example*:
+sql
+SELECT COUNT(*) AS total_high_earners
+FROM high_earners;
+
+
+*Explanation:*
+
+- This query counts the number of rows in the high_earners view, giving the total number of employees who earn more than $60,000.
+
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
