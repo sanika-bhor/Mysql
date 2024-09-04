@@ -162,14 +162,14 @@ WHERE salary > 80000;
 ### Example 3: Sorting Data from a View
 You can order the results retrieved from a view:
 
-*Example*:
+**Example**:
 ```sql
 SELECT employee_id, first_name, salary
 FROM high_earners
 ORDER BY salary DESC;
 ```
 
-*Explanation:*
+**Explanation:**
 
 - This query selects the employee_id, first_name, and salary from the high_earners view and orders the results by salary in descending order.
 
@@ -177,13 +177,13 @@ ORDER BY salary DESC;
 ### Example 4: Aggregating Data from a View
 You can perform aggregate functions like COUNT, SUM, AVG, etc., on data from a view:
 
-*Example*:
+**Example**:
 ```sql
 SELECT COUNT(*) AS total_high_earners
 FROM high_earners;
 ```
 
-*Explanation:*
+**Explanation:**
 
 - This query counts the number of rows in the high_earners view, giving the total number of employees who earn more than $60,000.
 
