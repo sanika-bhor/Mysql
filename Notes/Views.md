@@ -220,3 +220,14 @@ SELECT employee_id, first_name, last_name, salary
 FROM employees
 WHERE salary > 60000;
 ```
+Now, you want to update this view to also include the department_id column and change the salary condition to only show employees who earn more than $70,000.
+
+**Use CREATE OR REPLACE VIEW**
+```sql
+CREATE OR REPLACE VIEW high_earners AS
+SELECT employee_id, first_name, last_name, salary, department_id
+FROM employees
+WHERE salary > 70000;
+```
+
+
