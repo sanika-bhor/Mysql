@@ -190,3 +190,20 @@ FROM high_earners;
 
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+## Updating a View:
+
+Updating a view in SQL refers to modifying the definition of an existing view. This can be done using the CREATE OR REPLACE VIEW statement. It allows you to change the structure, columns, or logic of the view without needing to drop and recreate it.
+
+**Syntax**:
+```sql
+CREATE OR REPLACE VIEW view_name AS
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+```
