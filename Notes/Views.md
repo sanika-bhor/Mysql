@@ -193,8 +193,6 @@ FROM high_earners;
 
 
 
-<!------------------------------------------------------------->
-----------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Updating a View:
 
@@ -230,4 +228,10 @@ FROM employees
 WHERE salary > 70000;
 ```
 
+**Explanation:**
 
+- The CREATE OR REPLACE VIEW statement updates the existing high_earners view to include the department_id and filter for employees with salaries above $70,000.
+- The view now reflects the new logic without needing to drop and recreate it.
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
