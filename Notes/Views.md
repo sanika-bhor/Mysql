@@ -122,7 +122,7 @@ This will return a list of employees from the employees table who earn more than
 
 Querying a view in SQL is just like querying a regular table. Once a view is created, you can retrieve data from it using the SELECT statement. Here’s how you can do. it
 
-*Syntax*:
+**Syntax**:
 ```sql
 SELECT column1, column2, ...
 FROM view_name
@@ -133,13 +133,13 @@ WHERE condition;
 
 Suppose you have a view named high_earners that was created to show employees who earn more than $60,000. You can query this view to get the data:
 
-*Example*:
+**Example**:
 
 ```sql
 SELECT * FROM high_earners;
 ```
 
-*Explanation:*
+**Explanation:**
 
 - This query selects all columns and rows from the high_earners view.
 
@@ -147,14 +147,14 @@ SELECT * FROM high_earners;
 
 You can also apply additional filters to the data retrieved from a view, just as you would with a table:
 
-*Example*:
+**Example**:
 ```sql
 SELECT first_name, last_name
 FROM high_earners
 WHERE salary > 80000;
 ```
 
-*Explanation:*
+**Explanation:**
 
 - This query selects the first_name and last_name of employees from the high_earners view who have a salary greater than $80,000.
 
