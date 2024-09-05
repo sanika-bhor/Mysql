@@ -47,3 +47,8 @@ insert into orders (date,total,status) values('2024-7-4',2500,'processed');
 insert into orders (date,total,status) values('2024-2-14',8900,'processed');
 insert into orders (date,total,status) values('2024-9-4',999,'intransmit');
 
+
+-- retriview the data from table
+select * from products;
+select * from credentials;
+select * from orders;
