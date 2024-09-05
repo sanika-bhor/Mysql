@@ -252,3 +252,19 @@ Dropping a view in SQL means permanently removing the view from the database. On
 DROP VIEW view_name;
 ```
 
+
+### Example:
+
+Suppose you have a view called high_earners that you no longer need. You can drop it as follows:
+
+**Example:**
+```sql
+DROP VIEW high_earners;
+```
+
+**Explanation:**
+
+- This statement removes the high_earners view from the database.
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
