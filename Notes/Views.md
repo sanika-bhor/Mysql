@@ -235,3 +235,20 @@ WHERE salary > 70000;
 
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+## Dropping a View:
+
+Dropping a view in SQL means permanently removing the view from the database. Once dropped, the view no longer exists, and any queries or operations that depend on it will fail until the view is recreated.
+
+**Syntax**:
+```sql
+DROP VIEW view_name;
+```
+
