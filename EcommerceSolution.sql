@@ -71,6 +71,8 @@ select * from credentials;
 select * from orders;
 select * from users;
 
+-- by mistakely create column price with data type int instead of decimal
+ALTER TABLE products ADD COLUMN price  decimal(10,2);
 
 -- Alter table users to add contact number column 
 ALTER TABLE users ADD COLUMN contact numeric;
