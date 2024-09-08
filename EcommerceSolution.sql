@@ -4,6 +4,8 @@ create database shoppingCart;
 -- then use created database to perform operations on it
 use shoppingCart;
 
+
+
 -- create table products for storing data products data
 create table products(
 productId int not null auto_increment primary key, 
@@ -38,6 +40,9 @@ create table orders (
   total int,
   status varchar(15) );
 
+
+-- to show the structure of table like column name, datatype, any constaint, key etc
+desc products;
 
 -- Insert products data in products table
 insert into products (productName, price) values('mobile',12000);
