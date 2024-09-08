@@ -53,6 +53,11 @@ insert into credentials (email,password,name,location,age)
         values('sumitbhor@gmail.com','sumit','sumit bhor','manchar',18);
 
 
+-- insert users details
+insert into users (username,password,email,address) values('SanikaBhor','sanika123','bhorsanika0239@gmail.com','tambademala');
+insert into users (username,password,email,address) values('SumitBhor','sumit','sumitbhor7@gmail.com','tambademala');
+insert into users (username,password,email,address) values('DishaSatpute','disha','dish@gmail.com','tambademala');
+
 -- insert orders details
 insert into orders (date,total,status) values('2024-4-7',2500,'intransmit');
 insert into orders (date,total,status) values('2024-7-4',2500,'processed');
@@ -64,3 +69,4 @@ insert into orders (date,total,status) values('2024-9-4',999,'intransmit');
 select * from products;
 select * from credentials;
 select * from orders;
+select * from users;
