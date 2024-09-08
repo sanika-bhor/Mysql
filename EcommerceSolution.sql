@@ -56,7 +56,7 @@ insert into credentials (email,password,name,location,age)
 -- insert users details
 insert into users (username,password,email,address) values('SanikaBhor','sanika123','bhorsanika0239@gmail.com','tambademala');
 insert into users (username,password,email,address) values('SumitBhor','sumit','sumitbhor7@gmail.com','tambademala');
-insert into users (username,password,email,address) values('DishaSatpute','disha','dish@gmail.com','tambademala');
+insert into users (username,password,email,address) values('DishaSatpute','disha','dish@gmail.com','Rajgurunager');
 
 -- insert orders details
 insert into orders (date,total,status) values('2024-4-7',2500,'intransmit');
@@ -70,3 +70,13 @@ select * from products;
 select * from credentials;
 select * from orders;
 select * from users;
+
+
+-- Alter table users to add contact number column 
+ALTER TABLE users ADD COLUMN contact numeric;
+
+
+-- after adding new column we have to update that column value
+update users set contact=8446756339 WHERE id=1;
+update users set contact=8530086989 WHERE id=2;
+update users set contact=8956232154 WHERE id=3;
