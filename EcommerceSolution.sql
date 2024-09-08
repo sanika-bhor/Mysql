@@ -19,6 +19,16 @@ create table credentials (
   location varchar(20),
   age int );
 
+-- create table user such that it can store users details
+create table users (
+id int auto_increment primary key,
+username varchar(50) not null unique,
+password varchar(255) not null,
+email varchar(100) not null unique,
+address varchar(255)
+);
+
+
 -- create table orders that store orders data
 create table orders (
   id int not null auto_increment primary key,
