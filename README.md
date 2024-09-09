@@ -7,6 +7,9 @@ MySQL is an open-source relational database management system (RDBMS) that uses 
 
 <a href="https://github.com/sanika-bhor/Mysql/blob/main/Notes/mysql_info.md">MYSQL Information</a> <br/>
 <a href="https://github.com/sanika-bhor/Mysql/blob/main/Notes/SQL_Basic.md">SQL Basics</a> <br/>
+<a href="https://github.com/sanika-bhor/Mysql/blob/main/Notes/SQL_Constraint.md">SQL Constraint</a> <br/>
+<a href="hhttps://github.com/sanika-bhor/Mysql/blob/main/Notes/SQL_Operator.md">SQL Operators</a> <br/>
+<a href="https://github.com/sanika-bhor/Mysql/blob/main/Notes/Inbuilt_function.md">SQL Built in function</a> <br/>
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
