@@ -5,6 +5,10 @@ MySQL is an open-source relational database management system (RDBMS) that uses 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
+<a href="https://github.com/sanika-bhor/Mysql/blob/main/Notes/mysql_info.md">MYSQL Information</a> <br/>
+<a href="https://github.com/sanika-bhor/Mysql/blob/main/Notes/SQL_Basic.md">SQL Basics</a> <br/>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Installation
 
