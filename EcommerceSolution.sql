@@ -117,3 +117,6 @@ SELECT * FROM products WHERE productName="mobile";
 
 -- we can also arrange data just like i want to arrange the price of all product im ascending order such that low price product at the yop
 SELECT * FROM products ORDER BY price ASC;
+
+-- also in desecnding as
+SELECT * FROM products ORDER BY price DESC;
