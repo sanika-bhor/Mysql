@@ -106,3 +106,10 @@ TRUNCATE TABLE orders;
 
 --delete all rows with table
 DELETE FROM orders;
+
+
+-- but when you want to delte particular delete then we can use below
+DELETE FROM orders WHERE id=1;
+
+-- suppose the table contains 100 records but you want to retrive only specific record then use where clause
+SELECT * FROM products WHERE productName="mobile";
