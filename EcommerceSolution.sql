@@ -35,12 +35,13 @@ address varchar(255)
 create table orders (
   id int not null auto_increment primary key,
   date date,
+  userId int,
   total int,
   status varchar(15) );
 
-
 -- to show the structure of table like column name, datatype, any constaint, key etc
 desc products;
+desc orders;
 
 -- Insert products data in products table
 insert into products (productName, price) values('mobile',12000);
@@ -102,8 +103,8 @@ ALTER TABLE credentials RENAME TO userCredentials;
 TRUNCATE TABLE orders;
 
 
---delete all rows with table
-DELETE FROM orders;
+-- delete all rows with table
+DROP TABLE orders;
 
 
 -- but when you want to delte particular delete then we can use below
@@ -119,6 +120,9 @@ SELECT * FROM products ORDER BY price ASC;
 -- also in desecnding as
 SELECT * FROM products ORDER BY price DESC;
 
-
 -- when we forgot to declare primary key at the time of table creating then you can add using alter command
 ALTER TABLE users ADD PRIMARY KEY (id);
+
+
+-- when we want to create fpreign key by giving the refernce of another primary key
+ALTER TABLE orders ADD FOREIGN KEY (userId) REFERENCES users(id);
