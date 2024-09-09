@@ -94,3 +94,15 @@ ALTER TABLE users ADD COLUMN contact numeric;
 update users set contact=8446756339 WHERE id=1;
 update users set contact=8530086989 WHERE id=2;
 update users set contact=8956232154 WHERE id=3;
+
+
+-- when you want to rename the table with new table name
+ALTER TABLE credentials RENAME TO userCredentials;
+
+
+-- delete only all rows of the table
+TRUNCATE TABLE orders;
+
+
+--delete all rows with table
+DELETE FROM orders;
