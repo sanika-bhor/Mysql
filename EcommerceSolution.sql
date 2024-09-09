@@ -4,8 +4,6 @@ create database shoppingCart;
 -- then use created database to perform operations on it
 use shoppingCart;
 
-
-
 -- create table products for storing data products data
 create table products(
 productId int not null auto_increment primary key, 
@@ -120,3 +118,7 @@ SELECT * FROM products ORDER BY price ASC;
 
 -- also in desecnding as
 SELECT * FROM products ORDER BY price DESC;
+
+
+-- when we forgot to declare primary key at the time of table creating then you can add using alter command
+ALTER TABLE users ADD PRIMARY KEY (id);
