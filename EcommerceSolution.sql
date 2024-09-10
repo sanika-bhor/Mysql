@@ -126,3 +126,8 @@ ALTER TABLE users ADD PRIMARY KEY (id);
 
 -- when we want to create fpreign key by giving the refernce of another primary key
 ALTER TABLE orders ADD FOREIGN KEY (userId) REFERENCES users(id);
+
+
+
+-- add unique constraint to users table
+ALTER TABLE users ADD CONSTRAINT unique_password UNIQUE (password);
