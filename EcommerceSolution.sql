@@ -131,3 +131,6 @@ ALTER TABLE orders ADD FOREIGN KEY (userId) REFERENCES users(id);
 
 -- add unique constraint to users table
 ALTER TABLE users ADD CONSTRAINT unique_password UNIQUE (password);
+
+--we can add check constaint to check age should be greater than 15
+ALTER TABLE credentials ADD CONSTRAINT check_age CHECK (age > 15);
