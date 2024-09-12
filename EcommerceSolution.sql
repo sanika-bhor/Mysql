@@ -63,10 +63,10 @@ insert into users (username,password,email,address) values('SumitBhor','sumit','
 insert into users (username,password,email,address) values('DishaSatpute','disha','dish@gmail.com','Rajgurunager');
 
 -- insert orders details
-insert into orders (date,total,status) values('2024-4-7',2500,'intransmit');
-insert into orders (date,total,status) values('2024-7-4',2500,'processed');
-insert into orders (date,total,status) values('2024-2-14',8900,'processed');
-insert into orders (date,total,status) values('2024-9-4',999,'intransmit');
+insert into orders (date, userId, total,status) values('2024-4-7',1,2500,'intransmit');
+insert into orders (date,userId,total,status) values('2024-7-4',2,2500,'processed');
+insert into orders (date,userId,total,status) values('2024-2-14',4,8900,'processed');
+insert into orders (date,userId,total,status) values('2024-9-4',3,999,'intransmit');
 
 
 -- retriview the data from table
@@ -132,5 +132,13 @@ ALTER TABLE orders ADD FOREIGN KEY (userId) REFERENCES users(id);
 -- add unique constraint to users table
 ALTER TABLE users ADD CONSTRAINT unique_password UNIQUE (password);
 
---we can add check constaint to check age should be greater than 15
+-- we can add check constaint to check age should be greater than 15
 ALTER TABLE credentials ADD CONSTRAINT check_age CHECK (age > 15);
+
+
+-- Retrieve user details along with their orders using INNER JOIN
+SELECT users.username, users.email, orders.date, orders.total 
+FROM users
+INNER JOIN orders ON users.id = orders.userId;
+
+
