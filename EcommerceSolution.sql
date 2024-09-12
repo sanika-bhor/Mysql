@@ -142,3 +142,7 @@ FROM users
 INNER JOIN orders ON users.id = orders.userId;
 
 
+-- Use LEFT JOIN to show all users, including those without orders
+SELECT users.username, orders.date, orders.total
+FROM users
+LEFT JOIN orders ON users.id = orders.userId;
