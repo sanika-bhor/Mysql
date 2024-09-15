@@ -157,3 +157,11 @@ RIGHT JOIN users ON orders.userId = users.id;
 SELECT users.username, orders.date, orders.total
 FROM users
 FULL JOIN orders ON users.id = orders.userId;
+
+
+
+-- Find the total number of products in stock
+SELECT sum(stock) AS totalStock FROM products;
+
+-- Get the average product price
+SELECT AVG(price) AS averagePrice FROM products;
