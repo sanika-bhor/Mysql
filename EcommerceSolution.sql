@@ -152,3 +152,8 @@ LEFT JOIN orders ON users.id = orders.userId;
 SELECT users.username, orders.date, orders.total
 FROM orders
 RIGHT JOIN users ON orders.userId = users.id;
+
+-- Retrieve all users and all orders, showing data even if no match exists on either side.
+SELECT users.username, orders.date, orders.total
+FROM users
+FULL JOIN orders ON users.id = orders.userId;
