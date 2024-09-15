@@ -146,3 +146,9 @@ INNER JOIN orders ON users.id = orders.userId;
 SELECT users.username, orders.date, orders.total
 FROM users
 LEFT JOIN orders ON users.id = orders.userId;
+
+
+-- Retrieve all orders, even if they don't have a corresponding user.
+SELECT users.username, orders.date, orders.total
+FROM orders
+RIGHT JOIN users ON orders.userId = users.id;
