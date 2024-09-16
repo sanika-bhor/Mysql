@@ -197,3 +197,8 @@ CREATE VIEW userOrderHistory AS
 SELECT users.username, orders.date, orders.total, orders.status
 FROM users
 JOIN orders ON users.id = orders.userId;
+
+
+
+-- Query the view
+SELECT * FROM userOrderHistory WHERE username = 'SanikaBhor';
