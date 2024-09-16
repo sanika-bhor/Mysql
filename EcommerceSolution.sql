@@ -202,3 +202,9 @@ JOIN orders ON users.id = orders.userId;
 
 -- Query the view
 SELECT * FROM userOrderHistory WHERE username = 'SanikaBhor';
+
+
+-- Find the products with price greater than the average price
+SELECT productName, price 
+FROM products 
+WHERE price > (SELECT AVG(price) FROM products);
