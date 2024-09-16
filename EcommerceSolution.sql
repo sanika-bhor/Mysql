@@ -165,3 +165,6 @@ SELECT sum(stock) AS totalStock FROM products;
 
 -- Get the average product price
 SELECT AVG(price) AS averagePrice FROM products;
+
+-- Count the number of users
+SELECT COUNT(*) AS totalUsers FROM users;
