@@ -190,3 +190,10 @@ SELECT status, SUM(total) AS totalRevenue
 FROM orders
 GROUP BY status
 HAVING SUM(total) > 5000;
+
+
+-- Create a view to simplify querying user order history
+CREATE VIEW userOrderHistory AS
+SELECT users.username, orders.date, orders.total, orders.status
+FROM users
+JOIN orders ON users.id = orders.userId;
