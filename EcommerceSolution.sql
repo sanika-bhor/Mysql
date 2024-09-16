@@ -171,3 +171,9 @@ SELECT COUNT(*) AS totalUsers FROM users;
 
 -- Find the maximum price of products
 SELECT MAX(price) AS highestPrice FROM products;
+
+
+-- Group orders by status and calculate total revenue per status
+SELECT status, SUM(total) AS totalRevenue
+FROM orders
+GROUP BY status;
