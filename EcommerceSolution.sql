@@ -183,3 +183,10 @@ GROUP BY status;
 SELECT price, COUNT(*) AS productCount
 FROM products
 GROUP BY price;
+
+
+-- Get the total revenue per status but only show statuses with revenue greater than 5000
+SELECT status, SUM(total) AS totalRevenue
+FROM orders
+GROUP BY status
+HAVING SUM(total) > 5000;
