@@ -208,3 +208,9 @@ SELECT * FROM userOrderHistory WHERE username = 'SanikaBhor';
 SELECT productName, price 
 FROM products 
 WHERE price > (SELECT AVG(price) FROM products);
+
+
+-- Retrieve users who have placed more than one order
+SELECT username 
+FROM users 
+WHERE id IN (SELECT userId FROM orders GROUP BY userId HAVING COUNT(*) > 1);
