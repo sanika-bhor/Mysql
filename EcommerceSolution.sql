@@ -177,3 +177,9 @@ SELECT MAX(price) AS highestPrice FROM products;
 SELECT status, SUM(total) AS totalRevenue
 FROM orders
 GROUP BY status;
+
+
+-- Group products by price and count the number of products in each price range
+SELECT price, COUNT(*) AS productCount
+FROM products
+GROUP BY price;
