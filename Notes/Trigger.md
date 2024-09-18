@@ -25,7 +25,7 @@ A trigger in SQL is a special type of stored procedure that automatically execut
 
 
 ## Synatx:
-``sql
+```sql
 CREATE TRIGGER trigger_name
 BEFORE | AFTER INSERT | UPDATE | DELETE
 ON table_name
@@ -33,5 +33,4 @@ FOR EACH ROW
 BEGIN
    -- SQL statements
 END;
-
-``
+```
