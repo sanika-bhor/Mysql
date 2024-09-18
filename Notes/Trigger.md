@@ -34,3 +34,23 @@ BEGIN
    -- SQL statements
 END;
 ```
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+## Example: BEFORE INSERT Trigger
+
+Suppose you have a employees table, and you want to ensure that no employee is inserted with a salary lower than $30,000. You can create a BEFORE INSERT trigger that checks this condition.
+
+```sql
+CREATE TRIGGER check_salary_before_insert
+BEFORE INSERT ON employees
+FOR EACH ROW
+BEGIN
+   IF NEW.salary < 30000 THEN
+      SET NEW.salary = 30000;
+   END IF;
+END;
+```
+
+
+
