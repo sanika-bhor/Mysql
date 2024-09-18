@@ -52,5 +52,8 @@ BEGIN
 END;
 ```
 
+### Explanation:
 
-
+- **BEFORE INSERT:** The trigger will execute before a new row is inserted into the employees table.
+- **NEW.salary:** Refers to the value of the salary column in the new row being inserted.
+- If the salary is less than $30,000, the trigger automatically sets it to $30,000.
