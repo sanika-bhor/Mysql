@@ -19,3 +19,19 @@ A trigger in SQL is a special type of stored procedure that automatically execut
 ## Types of Triggers
 - **Before Trigger:** Executes before an INSERT, UPDATE, or DELETE operation on a table. Often used for validation or to modify data before it’s written.
 - **After Trigger:** Executes after an INSERT, UPDATE, or DELETE operation. Typically used for auditing or to trigger other actions once the data has changed.
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+## Synatx:
+``sql
+CREATE TRIGGER trigger_name
+BEFORE | AFTER INSERT | UPDATE | DELETE
+ON table_name
+FOR EACH ROW
+BEGIN
+   -- SQL statements
+END;
+
+``
