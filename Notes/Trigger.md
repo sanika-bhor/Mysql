@@ -12,3 +12,10 @@ A trigger in SQL is a special type of stored procedure that automatically execut
 - **Data Integrity:** Triggers help enforce data integrity by validating or modifying data before or after it’s changed.
 - **Business Logic:** You can encapsulate business rules within triggers, ensuring that they are always followed.
 - **Audit Changes:** Triggers can track changes to data for auditing purposes by logging changes to another table.
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+## Types of Triggers
+- **Before Trigger:** Executes before an INSERT, UPDATE, or DELETE operation on a table. Often used for validation or to modify data before it’s written.
+- **After Trigger:** Executes after an INSERT, UPDATE, or DELETE operation. Typically used for auditing or to trigger other actions once the data has changed.
