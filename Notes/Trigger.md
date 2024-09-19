@@ -60,3 +60,17 @@ END;
 
 <!------------------------------------------------------------->
 ----------------------------------------------------------------------------------------------------------------------------------------------
+
+## Example: AFTER INSERT Trigger for Auditing
+
+You can create an AFTER INSERT trigger to log changes to an audit table whenever a new employee is added to the employees table.
+```sql
+CREATE TRIGGER log_employee_insert
+AFTER INSERT ON employees
+FOR EACH ROW
+BEGIN
+   INSERT INTO employee_audit (employee_id, action, action_time)
+   VALUES (NEW.employee_id, 'INSERT', NOW());
+END;
+```
+
