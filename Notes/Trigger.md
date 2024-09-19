@@ -74,3 +74,8 @@ BEGIN
 END;
 ```
 
+### Explanation:
+
+- **AFTER INSERT:** The trigger fires after a new employee is inserted.
+- **NEW.employee_id:** Refers to the employee_id of the new employee being added.
+- This trigger logs the insertion into an employee_audit table, recording the employee_id, the action ('INSERT'), and the timestamp (NOW()).
