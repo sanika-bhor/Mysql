@@ -84,7 +84,7 @@ END;
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 
-##Example: AFTER UPDATE Trigger
+## Example: AFTER UPDATE Trigger
 To track updates to employee salaries, you could create an AFTER UPDATE trigger that logs changes to the salary in an audit table:
 
 ```sql
@@ -98,4 +98,9 @@ BEGIN
    END IF;
 END;
 ```
+### Explanation:
 
+- **AFTER UPDATE:** Fires after a row is updated in the employees table.
+- **OLD.salary:** Refers to the salary before the update.
+- **NEW.salary:** Refers to the new salary after the update.
+- The trigger logs the change if the salary was updated.
