@@ -13,7 +13,11 @@ MySQL is an open-source relational database management system (RDBMS) that uses 
 - <a href="https://github.com/sanika-bhor/Mysql/blob/main/Notes/Joins.md">*SQL joins*</a> <br/>
 - <a href="https://github.com/sanika-bhor/Mysql/blob/main/Notes/SQL_Errors.md">*SQL Errors*</a> <br/>
 - <a href="https://github.com/sanika-bhor/Mysql/blob/main/Notes/Views.md">*SQL Views*</a> <br/>
+- <a href="https://github.com/sanika-bhor/Mysql/blob/main/Notes/Trigger.md">*Triggers*</a> <br/>
+
 - <a href="https://github.com/sanika-bhor/Mysql/blob/main/EcommerceSolution.sql">*Ecommerce solution SQL Commands*</a> <br/>
+
+
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
