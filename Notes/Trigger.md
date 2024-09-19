@@ -79,3 +79,23 @@ END;
 - **AFTER INSERT:** The trigger fires after a new employee is inserted.
 - **NEW.employee_id:** Refers to the employee_id of the new employee being added.
 - This trigger logs the insertion into an employee_audit table, recording the employee_id, the action ('INSERT'), and the timestamp (NOW()).
+
+<!------------------------------------------------------------->
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+##Example: AFTER UPDATE Trigger
+To track updates to employee salaries, you could create an AFTER UPDATE trigger that logs changes to the salary in an audit table:
+
+```sql
+CREATE TRIGGER log_salary_update
+AFTER UPDATE ON employees
+FOR EACH ROW
+BEGIN
+   IF OLD.salary != NEW.salary THEN
+      INSERT INTO salary_audit (employee_id, old_salary, new_salary, change_time)
+      VALUES (NEW.employee_id, OLD.salary, NEW.salary, NOW());
+   END IF;
+END;
+```
+
